@@ -39,7 +39,7 @@ public class TerminalButtons {
 //            System.out.println("Len: " + phoneInputRes.length());
         }
 
-//        System.out.println("RES: " + textField.getValue().toString());
+       System.out.println("RES: " + textField.getValue().toString());
     }
 
     public void AddDigitToPasswordField(JPasswordField textField, int digit) {

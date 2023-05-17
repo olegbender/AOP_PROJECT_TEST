@@ -969,7 +969,7 @@ TB.AddDigitToFormattedTextField(jFormattedTextField2, 1);
         String phoneInputRes = jFormattedTextField2.getValue().toString();
         List<User> users = DataBaseObject.SelectAll();
         User resultUser = null;
-        for (int i = 0; i < users.size() - 1; i++) {
+        for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getTelephone().equals(phoneInputRes)) {
                 resultUser = users.get(i);
                 break;
@@ -1069,7 +1069,7 @@ TB.AddDigitToFormattedTextField(jFormattedTextField2, 1);
         String cardInputRes = CardField.getValue().toString();
         List<User> users = DataBaseObject.SelectAll();
         User resultUser = null;
-        for (int i = 0; i < users.size() - 1; i++) {
+        for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getCard_Number().equals(cardInputRes)) {
                 resultUser = users.get(i);
                 break;
