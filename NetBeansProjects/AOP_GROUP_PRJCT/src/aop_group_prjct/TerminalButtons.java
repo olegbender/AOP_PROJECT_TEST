@@ -64,11 +64,11 @@ public class TerminalButtons {
         String cardInputRes;
         try {
             cardInputRes = textField.getValue().toString();
-        } catch(NullPointerException e) {
+        } catch (NullPointerException e) {
             textField.setValue("");
             cardInputRes = textField.getValue().toString();
         }
-        
+
         System.out.println("RESF: " + cardInputRes);
         if (cardInputRes.length() == 4) {
             textField.setValue(cardInputRes + "-" + digit);
@@ -79,6 +79,28 @@ public class TerminalButtons {
         } else if (cardInputRes.length() >= 19) {
         } else {
             textField.setValue(cardInputRes + digit);
+        }
+    }
+
+    public void DeleteFromValueField(JFormattedTextField textField) {
+        String textInput;
+        try {
+            textInput = textField.getValue().toString();
+        } catch (NullPointerException e) {
+            textField.setValue("");
+            textInput = textField.getValue().toString();
+        }
+        if (textInput.length() > 0) {
+            textInput = textInput.substring(0, textInput.length() - 1);
+            textField.setValue(textInput);
+        }
+    }
+
+    public void AddDigitToValueField(JFormattedTextField textField, int digit) {
+        if (textField.getValue() == null) {
+            textField.setValue("" + digit);
+        } else {
+            if(textField.getValue().toString().length() <= 5)textField.setValue(textField.getValue() + "" + digit);
         }
     }
 
