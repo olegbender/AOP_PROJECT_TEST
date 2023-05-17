@@ -80,6 +80,7 @@ public class GUI_terminal extends javax.swing.JFrame {
         cButton28 = new javax.swing.JButton();
         cButton29 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        cButtonNext2 = new javax.swing.JButton();
         CardPanel = new javax.swing.JPanel();
         cBankLabel = new javax.swing.JLabel();
         InsertLabel = new javax.swing.JLabel();
@@ -246,6 +247,14 @@ public class GUI_terminal extends javax.swing.JFrame {
         CardField1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 CardField1MouseClicked(evt);
+            }
+        });
+        CardField1.addInputMethodListener(new java.awt.event.InputMethodListener() {
+            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
+                CardField1CaretPositionChanged(evt);
+            }
+            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
+                CardField1InputMethodTextChanged(evt);
             }
         });
         CardField1.addActionListener(new java.awt.event.ActionListener() {
@@ -600,13 +609,22 @@ public class GUI_terminal extends javax.swing.JFrame {
             }
         });
 
+        cButtonNext2.setBackground(new java.awt.Color(51, 204, 0));
+        cButtonNext2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButtonNext2.setText("Next");
+        cButtonNext2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButtonNext2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(cButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -623,12 +641,14 @@ public class GUI_terminal extends javax.swing.JFrame {
                         .addComponent(cButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(cButtonDel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cButtonDel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(cButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(cButtonNext2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -654,7 +674,8 @@ public class GUI_terminal extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(cButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButtonDel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(cButtonDel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButtonNext2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
@@ -1640,26 +1661,6 @@ public class GUI_terminal extends javax.swing.JFrame {
 
     private void sButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButton1ActionPerformed
         TB.AddDigitToFormattedTextField(sPhoneField, 1);
-//        String phoneInputRes = jFormattedTextField2.getValue().toString();
-//        
-//        if(phoneInputRes.length() == 0) {
-//            jFormattedTextField2.setValue("(" + 1);
-//        } else if(phoneInputRes.length() == 4) {
-//            jFormattedTextField2.setValue(phoneInputRes + ")1");
-//        } else if(phoneInputRes.length() == 7) {
-//            jFormattedTextField2.setValue(phoneInputRes + "-1");
-//        } else if(phoneInputRes.length() == 11) {
-//            jFormattedTextField2.setValue(phoneInputRes + "-1");
-//        } else if(phoneInputRes.length() >= 16) {
-//            return;
-//        }
-//        else {
-//            jFormattedTextField2.setValue(phoneInputRes + "1");
-//            System.out.println("Len: " + phoneInputRes.length());
-//        }
-//        
-//        
-//        System.out.println("RES: " + jFormattedTextField2.getValue().toString());
     }//GEN-LAST:event_sButton1ActionPerformed
 
     private void sButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButton3ActionPerformed
@@ -2008,6 +2009,7 @@ public class GUI_terminal extends javax.swing.JFrame {
     private void jFormattedTextField2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jFormattedTextField2MouseClicked
         // TODO add your handling code here:
         jPanel1.setVisible(true);
+        jPanel2.setVisible(false);
     }//GEN-LAST:event_jFormattedTextField2MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -2079,6 +2081,76 @@ public class GUI_terminal extends javax.swing.JFrame {
         // TODO add your handling code here:
         jPanel2.setVisible(true);
     }//GEN-LAST:event_CardField1MouseClicked
+
+    private void cButtonNext2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonNext2ActionPerformed
+        // TODO add your handling code here:
+         System.out.println("Caret moved");
+        String cardInputResult;
+        try {
+            cardInputResult = CardField1.getValue().toString();
+            if(cardInputResult.length() == 19) {
+                User cardUser = null;
+                List<User> users = DataBaseObject.SelectAll();
+                for(int i = 0; i < users.size(); i ++) {
+                    if(users.get(i).getCard_Number().equals(cardInputResult)) {
+                        cardUser = users.get(i);
+                    }
+                }
+                if(cardUser != null) jLabel2.setText("Receiver: " + cardUser.getUser_name());
+            }
+            
+        } catch (NullPointerException e) {
+            CardField1.setValue("");
+//            cardInputResult = CardField1.getValue().toString();
+        }        
+    }//GEN-LAST:event_cButtonNext2ActionPerformed
+
+    private void CardField1CaretPositionChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_CardField1CaretPositionChanged
+        // TODO add your handling code here:
+//        System.out.println("Caret moved");
+//        String cardInputResult;
+//        try {
+//            cardInputResult = CardField1.getValue().toString();
+//            if(cardInputResult.length() == 19) {
+//                User cardUser = null;
+//                List<User> users = DataBaseObject.SelectAll();
+//                for(int i = 0; i < users.size(); i ++) {
+//                    if(users.get(i).getCard_Number().equals(cardInputResult)) {
+//                        cardUser = users.get(i);
+//                    }
+//                }
+//                if(cardUser != null) jLabel2.setText("Receiver: " + cardUser.getUser_name());
+//            }
+//            
+//        } catch (NullPointerException e) {
+//            CardField1.setValue("");
+////            cardInputResult = CardField1.getValue().toString();
+//        }
+        
+    }//GEN-LAST:event_CardField1CaretPositionChanged
+
+    private void CardField1InputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_CardField1InputMethodTextChanged
+        // TODO add your handling code here:
+//         System.out.println("Caret moved");
+//        String cardInputResult;
+//        try {
+//            cardInputResult = CardField1.getValue().toString();
+//            if(cardInputResult.length() == 19) {
+//                User cardUser = null;
+//                List<User> users = DataBaseObject.SelectAll();
+//                for(int i = 0; i < users.size(); i ++) {
+//                    if(users.get(i).getCard_Number().equals(cardInputResult)) {
+//                        cardUser = users.get(i);
+//                    }
+//                }
+//                if(cardUser != null) jLabel2.setText("Receiver: " + cardUser.getUser_name());
+//            }
+//            
+//        } catch (NullPointerException e) {
+//            CardField1.setValue("");
+////            cardInputResult = CardField1.getValue().toString();
+//        }
+    }//GEN-LAST:event_CardField1InputMethodTextChanged
 
     /**
      * @param args the command line arguments
@@ -2176,6 +2248,7 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JButton cButtonDel2;
     private javax.swing.JButton cButtonNext;
     private javax.swing.JButton cButtonNext1;
+    private javax.swing.JButton cButtonNext2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JFormattedTextField jFormattedTextField2;
