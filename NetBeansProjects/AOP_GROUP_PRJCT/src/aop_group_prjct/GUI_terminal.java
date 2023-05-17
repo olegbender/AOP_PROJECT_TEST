@@ -125,6 +125,11 @@ public class GUI_terminal extends javax.swing.JFrame {
         PanelMenuReplenish.setText("Replenish the card");
         PanelMenuReplenish.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
         PanelMenuReplenish.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuReplenish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuReplenishMouseClicked(evt);
+            }
+        });
 
         PanelMenuContacts.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
         PanelMenuContacts.setForeground(new java.awt.Color(255, 255, 255));
@@ -633,10 +638,9 @@ public class GUI_terminal extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(labelPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -959,6 +963,12 @@ public class GUI_terminal extends javax.swing.JFrame {
         jPanel1.setVisible(true);
         currentUser = null;
     }//GEN-LAST:event_PanelMenuExitMouseClicked
+
+    private void PanelMenuReplenishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelMenuReplenishMouseClicked
+        // TODO add your handling code here:
+        System.out.println("Mouse Clicked!");
+        System.out.println("Another changes!");
+    }//GEN-LAST:event_PanelMenuReplenishMouseClicked
 
     /**
      * @param args the command line arguments
