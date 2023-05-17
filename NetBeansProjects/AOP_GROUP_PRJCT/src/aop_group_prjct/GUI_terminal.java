@@ -37,16 +37,6 @@ public class GUI_terminal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        PanelUserMenu = new javax.swing.JPanel();
-        PanelMenuLogo = new javax.swing.JLabel();
-        jSeparator2 = new javax.swing.JSeparator();
-        PanelMenuTitle = new javax.swing.JLabel();
-        PanelMenuTopUp = new javax.swing.JLabel();
-        PanelMenuReplenish = new javax.swing.JLabel();
-        PanelMenuContacts = new javax.swing.JLabel();
-        PanelMenuBalance = new javax.swing.JLabel();
-        PanelMenuTransfer = new javax.swing.JLabel();
-        PanelMenuExit = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jLabel13 = new javax.swing.JLabel();
@@ -92,141 +82,19 @@ public class GUI_terminal extends javax.swing.JFrame {
         jButton24 = new javax.swing.JButton();
         jButton25 = new javax.swing.JButton();
         jButton26 = new javax.swing.JButton();
+        PanelUserMenu = new javax.swing.JPanel();
+        PanelMenuLogo = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        PanelMenuTitle = new javax.swing.JLabel();
+        PanelMenuTopUp = new javax.swing.JLabel();
+        PanelMenuReplenish = new javax.swing.JLabel();
+        PanelMenuContacts = new javax.swing.JLabel();
+        PanelMenuBalance = new javax.swing.JLabel();
+        PanelMenuTransfer = new javax.swing.JLabel();
+        PanelMenuExit = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        PanelUserMenu.setBackground(new java.awt.Color(0, 102, 0));
-        PanelUserMenu.setVisible(false);
-
-        PanelMenuLogo.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        PanelMenuLogo.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
-        PanelMenuLogo.setText("UnprivateBank");
-
-        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jSeparator2.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-
-        PanelMenuTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        PanelMenuTitle.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTitle.setText("Main menu");
-
-        PanelMenuTopUp.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuTopUp.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuTopUp.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTopUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPhone.png"))); // NOI18N
-        PanelMenuTopUp.setText("   Top up account");
-        PanelMenuTopUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuTopUp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        PanelMenuReplenish.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuReplenish.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuReplenish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconCard.png"))); // NOI18N
-        PanelMenuReplenish.setText("Replenish the card");
-        PanelMenuReplenish.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        PanelMenuReplenish.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuReplenish.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuReplenishMouseClicked(evt);
-            }
-        });
-
-        PanelMenuContacts.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuContacts.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuContacts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconHelp.png"))); // NOI18N
-        PanelMenuContacts.setText("Contact with us");
-        PanelMenuContacts.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuContacts.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        PanelMenuBalance.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuBalance.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuBalance.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuBalance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconBalance.png"))); // NOI18N
-        PanelMenuBalance.setText("   Check balance");
-        PanelMenuBalance.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuBalance.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuBalanceMouseClicked(evt);
-            }
-        });
-
-        PanelMenuTransfer.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuTransfer.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuTransfer.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTransfer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTransfer.png"))); // NOI18N
-        PanelMenuTransfer.setText("   Make transfer");
-        PanelMenuTransfer.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuTransfer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        PanelMenuExit.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuExit.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuExit.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
-        PanelMenuExit.setText("          Exit");
-        PanelMenuExit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuExitMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout PanelUserMenuLayout = new javax.swing.GroupLayout(PanelUserMenu);
-        PanelUserMenu.setLayout(PanelUserMenuLayout);
-        PanelUserMenuLayout.setHorizontalGroup(
-            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
-                                .addComponent(PanelMenuContacts, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(PanelMenuExit, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
-                                .addComponent(PanelMenuReplenish, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(240, 240, 240)
-                                .addComponent(PanelMenuTransfer, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(14, Short.MAX_VALUE))
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addComponent(PanelMenuTopUp, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(PanelMenuBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14))
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addComponent(PanelMenuLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
-                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(PanelMenuTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38))))
-        );
-        PanelUserMenuLayout.setVerticalGroup(
-            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(PanelMenuTitle)
-                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PanelMenuLogo))
-                .addGap(29, 29, 29)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuTopUp)
-                    .addComponent(PanelMenuBalance))
-                .addGap(7, 7, 7)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuReplenish)
-                    .addComponent(PanelMenuTransfer))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuContacts)
-                    .addComponent(PanelMenuExit))
-                .addContainerGap(119, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(PanelUserMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
         jPanel2.setBackground(new java.awt.Color(51, 102, 0));
         jPanel2.setVisible(false);
@@ -743,6 +611,138 @@ public class GUI_terminal extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
+        PanelUserMenu.setBackground(new java.awt.Color(0, 102, 0));
+        PanelUserMenu.setVisible(false);
+
+        PanelMenuLogo.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        PanelMenuLogo.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
+        PanelMenuLogo.setText("UnprivateBank");
+
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator2.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+
+        PanelMenuTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        PanelMenuTitle.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTitle.setText("Main menu");
+
+        PanelMenuTopUp.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuTopUp.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuTopUp.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTopUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPhone.png"))); // NOI18N
+        PanelMenuTopUp.setText("   Top up account");
+        PanelMenuTopUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuTopUp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        PanelMenuReplenish.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuReplenish.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuReplenish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconCard.png"))); // NOI18N
+        PanelMenuReplenish.setText("Replenish the card");
+        PanelMenuReplenish.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        PanelMenuReplenish.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuReplenish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuReplenishMouseClicked(evt);
+            }
+        });
+
+        PanelMenuContacts.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuContacts.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuContacts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconHelp.png"))); // NOI18N
+        PanelMenuContacts.setText("Contact with us");
+        PanelMenuContacts.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuContacts.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        PanelMenuBalance.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuBalance.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuBalance.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuBalance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconBalance.png"))); // NOI18N
+        PanelMenuBalance.setText("   Check balance");
+        PanelMenuBalance.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuBalance.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuBalanceMouseClicked(evt);
+            }
+        });
+
+        PanelMenuTransfer.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuTransfer.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuTransfer.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTransfer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTransfer.png"))); // NOI18N
+        PanelMenuTransfer.setText("   Make transfer");
+        PanelMenuTransfer.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuTransfer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        PanelMenuExit.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuExit.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
+        PanelMenuExit.setText("          Exit");
+        PanelMenuExit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuExitMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelUserMenuLayout = new javax.swing.GroupLayout(PanelUserMenu);
+        PanelUserMenu.setLayout(PanelUserMenuLayout);
+        PanelUserMenuLayout.setHorizontalGroup(
+            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                        .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
+                                .addComponent(PanelMenuContacts, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(PanelMenuExit, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
+                                .addComponent(PanelMenuReplenish, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(240, 240, 240)
+                                .addComponent(PanelMenuTransfer, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(14, Short.MAX_VALUE))
+                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                        .addComponent(PanelMenuTopUp, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(PanelMenuBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))
+                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                        .addComponent(PanelMenuLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(PanelMenuTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))))
+        );
+        PanelUserMenuLayout.setVerticalGroup(
+            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(PanelMenuTitle)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PanelMenuLogo))
+                .addGap(29, 29, 29)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuTopUp)
+                    .addComponent(PanelMenuBalance))
+                .addGap(7, 7, 7)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuReplenish)
+                    .addComponent(PanelMenuTransfer))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuContacts)
+                    .addComponent(PanelMenuExit))
+                .addContainerGap(119, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(PanelUserMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -900,8 +900,9 @@ public class GUI_terminal extends javax.swing.JFrame {
         // TODO add your handling code here:
         String phoneInputRes = jFormattedTextField2.getValue().toString();
         List<User> users = DataBaseObject.SelectAll();
+        DataBaseObject.writeDataBase();
         User resultUser = null;
-        for (int i = 0; i < users.size() - 1; i++) {
+        for (int i = 0; i < users.size(); i++) {
             if (users.get(i).getTelephone().equals(phoneInputRes)) {
                 resultUser = users.get(i);
                 break;
