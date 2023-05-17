@@ -69,12 +69,15 @@ public class User {
     }
 
     void Card_number() {
-        Random rand = new Random();
-        card_number = "1551";
-        for(int i = 0; i < 12; i++) {
-            card_number += rand.nextInt(10);
+    Random rand = new Random();
+    card_number = "1551-";
+    for (int i = 0; i < 12; i++) {
+        if (i % 4 == 0 && i != 0) {
+            card_number += "-";
         }
+        card_number += rand.nextInt(10);
     }
+}
 
     void User_name(String u) {
         user_name = u;
