@@ -15,7 +15,7 @@ public class TerminalButtons {
             phoneInputRes = phoneInputRes.substring(0, phoneInputRes.length() - 1);
             textField.setValue(phoneInputRes);
         }
-        if (phoneInputRes.length() > 1) {
+        if (phoneInputRes.length() >= 1) {
             phoneInputRes = phoneInputRes.substring(0, phoneInputRes.length() - 1);
             textField.setValue(phoneInputRes);
         }

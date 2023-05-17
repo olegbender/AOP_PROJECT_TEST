@@ -67,6 +67,19 @@ public class GUI_terminal extends javax.swing.JFrame {
         cButton19 = new javax.swing.JButton();
         cButtonNext1 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        cButtonDel2 = new javax.swing.JButton();
+        cButton20 = new javax.swing.JButton();
+        cButton21 = new javax.swing.JButton();
+        cButton22 = new javax.swing.JButton();
+        cButton23 = new javax.swing.JButton();
+        cButton24 = new javax.swing.JButton();
+        cButton25 = new javax.swing.JButton();
+        cButton26 = new javax.swing.JButton();
+        cButton27 = new javax.swing.JButton();
+        cButton28 = new javax.swing.JButton();
+        cButton29 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         CardPanel = new javax.swing.JPanel();
         cBankLabel = new javax.swing.JLabel();
         InsertLabel = new javax.swing.JLabel();
@@ -150,17 +163,22 @@ public class GUI_terminal extends javax.swing.JFrame {
                 TransferPanelComponentShown(evt);
             }
         });
+        TransferPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        TransferPanel.setVisible(false);
 
         TransferPanelTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
         TransferPanelTitle.setForeground(new java.awt.Color(255, 255, 255));
         TransferPanelTitle.setText("Transfer");
+        TransferPanel.add(TransferPanelTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 6, -1, 50));
 
         TransferPanelSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        TransferPanel.add(TransferPanelSeparator, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 6, 13, 45));
 
         TransferPanelLogo1.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
         TransferPanelLogo1.setForeground(new java.awt.Color(255, 255, 255));
         TransferPanelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
         TransferPanelLogo1.setText("UnprivateBank");
+        TransferPanel.add(TransferPanelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 315, -1));
 
         TransferPanelSenderCard.setBackground(new java.awt.Color(204, 204, 204));
         TransferPanelSenderCard.setMaximumSize(new java.awt.Dimension(300, 300));
@@ -205,6 +223,8 @@ public class GUI_terminal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        TransferPanel.add(TransferPanelSenderCard, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 62, 315, 160));
+
         TransferPanelSenderCard1.setBackground(new java.awt.Color(204, 204, 204));
         TransferPanelSenderCard1.setMaximumSize(new java.awt.Dimension(300, 300));
 
@@ -223,6 +243,11 @@ public class GUI_terminal extends javax.swing.JFrame {
         CardField1.setToolTipText("");
         CardField1.setFont(new java.awt.Font("Marcellus SC", 0, 18)); // NOI18N
         CardField1.setMinimumSize(new java.awt.Dimension(64, 26));
+        CardField1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CardField1MouseClicked(evt);
+            }
+        });
         CardField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CardField1ActionPerformed(evt);
@@ -277,6 +302,8 @@ public class GUI_terminal extends javax.swing.JFrame {
                     .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(8, Short.MAX_VALUE))
         );
+
+        TransferPanel.add(TransferPanelSenderCard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 62, -1, -1));
 
         jPanel1.setVisible(false);
 
@@ -462,50 +489,177 @@ public class GUI_terminal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        TransferPanel.setVisible(false);
+        TransferPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, -1, -1));
 
-        javax.swing.GroupLayout TransferPanelLayout = new javax.swing.GroupLayout(TransferPanel);
-        TransferPanel.setLayout(TransferPanelLayout);
-        TransferPanelLayout.setHorizontalGroup(
-            TransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TransferPanelLayout.createSequentialGroup()
+        jPanel2.setVisible(false);
+
+        cButtonDel2.setBackground(new java.awt.Color(204, 0, 0));
+        cButtonDel2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButtonDel2.setText("X");
+        cButtonDel2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButtonDel2ActionPerformed(evt);
+            }
+        });
+
+        cButton20.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton20.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton20.setText("7");
+        cButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton20ActionPerformed(evt);
+            }
+        });
+
+        cButton21.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton21.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton21.setText("4");
+        cButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton21ActionPerformed(evt);
+            }
+        });
+
+        cButton22.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton22.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton22.setText("1");
+        cButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton22ActionPerformed(evt);
+            }
+        });
+
+        cButton23.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton23.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton23.setText("2");
+        cButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton23ActionPerformed(evt);
+            }
+        });
+
+        cButton24.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton24.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton24.setText("3");
+        cButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton24ActionPerformed(evt);
+            }
+        });
+
+        cButton25.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton25.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton25.setText("6");
+        cButton25.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton25ActionPerformed(evt);
+            }
+        });
+
+        cButton26.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton26.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton26.setText("5");
+        cButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton26ActionPerformed(evt);
+            }
+        });
+
+        cButton27.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton27.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton27.setText("8");
+        cButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton27ActionPerformed(evt);
+            }
+        });
+
+        cButton28.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton28.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton28.setText("9");
+        cButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton28ActionPerformed(evt);
+            }
+        });
+
+        cButton29.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton29.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton29.setText("0");
+        cButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton29ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("jButton1");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(TransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TransferPanelLogo1, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
-                    .addComponent(TransferPanelSenderCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(TransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(TransferPanelLayout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(TransferPanelSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(TransferPanelTitle)
-                        .addGap(73, 73, 73))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TransferPanelLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                        .addComponent(TransferPanelSenderCard1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14))))
-            .addGroup(TransferPanelLayout.createSequentialGroup()
-                .addGap(210, 210, 210)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        TransferPanelLayout.setVerticalGroup(
-            TransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TransferPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(TransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TransferPanelTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(TransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(TransferPanelSeparator, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(TransferPanelLogo1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(cButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(cButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(cButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cButtonDel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(TransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TransferPanelSenderCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(TransferPanelSenderCard1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cButtonDel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        TransferPanel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, -1, -1));
 
         getContentPane().add(TransferPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
@@ -1759,7 +1913,7 @@ public class GUI_terminal extends javax.swing.JFrame {
     private void cButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton12ActionPerformed
         // TODO add your handling code here:
         TB.AddDigitToValueField(jFormattedTextField2, 1);
-        
+
     }//GEN-LAST:event_cButton12ActionPerformed
 
     private void cButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton13ActionPerformed
@@ -1832,7 +1986,7 @@ public class GUI_terminal extends javax.swing.JFrame {
                     jFormattedTextField2.setValue(0);
                     System.out.println(jFormattedTextField2.getText());
                 }
-                if(valueToSendInputResult != 0) {
+                if (valueToSendInputResult != 0) {
                     DataBaseObject.Transfer(currentUser.getId(), receiverUser.getId(), valueToSendInputResult);
                     jFormattedTextField2.setValue("0");
                 }
@@ -1860,6 +2014,71 @@ public class GUI_terminal extends javax.swing.JFrame {
         // TODO add your handling code here:
         jPanel1.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void cButtonDel2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonDel2ActionPerformed
+        // TODO add your handling code here:
+        TB.DeleteFromFormattedTextField(CardField1);
+    }//GEN-LAST:event_cButtonDel2ActionPerformed
+
+    private void cButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton20ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 7);
+    }//GEN-LAST:event_cButton20ActionPerformed
+
+    private void cButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton21ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 4);
+    }//GEN-LAST:event_cButton21ActionPerformed
+
+    private void cButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton22ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 1);
+    }//GEN-LAST:event_cButton22ActionPerformed
+
+    private void cButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton23ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 2);
+    }//GEN-LAST:event_cButton23ActionPerformed
+
+    private void cButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton24ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 3);
+    }//GEN-LAST:event_cButton24ActionPerformed
+
+    private void cButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton25ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 6);
+    }//GEN-LAST:event_cButton25ActionPerformed
+
+    private void cButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton26ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 5);
+    }//GEN-LAST:event_cButton26ActionPerformed
+
+    private void cButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton27ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 8);
+    }//GEN-LAST:event_cButton27ActionPerformed
+
+    private void cButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton28ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 9);
+    }//GEN-LAST:event_cButton28ActionPerformed
+
+    private void cButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton29ActionPerformed
+        // TODO add your handling code here:
+        TB.AddDigitToCardField(CardField1, 0);
+    }//GEN-LAST:event_cButton29ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        jPanel2.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void CardField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CardField1MouseClicked
+        // TODO add your handling code here:
+        jPanel2.setVisible(true);
+    }//GEN-LAST:event_CardField1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -1935,6 +2154,16 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JButton cButton18;
     private javax.swing.JButton cButton19;
     private javax.swing.JButton cButton2;
+    private javax.swing.JButton cButton20;
+    private javax.swing.JButton cButton21;
+    private javax.swing.JButton cButton22;
+    private javax.swing.JButton cButton23;
+    private javax.swing.JButton cButton24;
+    private javax.swing.JButton cButton25;
+    private javax.swing.JButton cButton26;
+    private javax.swing.JButton cButton27;
+    private javax.swing.JButton cButton28;
+    private javax.swing.JButton cButton29;
     private javax.swing.JButton cButton3;
     private javax.swing.JButton cButton4;
     private javax.swing.JButton cButton5;
@@ -1944,9 +2173,11 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JButton cButton9;
     private javax.swing.JButton cButtonDel;
     private javax.swing.JButton cButtonDel1;
+    private javax.swing.JButton cButtonDel2;
     private javax.swing.JButton cButtonNext;
     private javax.swing.JButton cButtonNext1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -1954,6 +2185,7 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel pBankLabel;
     private javax.swing.JButton pButton0;
