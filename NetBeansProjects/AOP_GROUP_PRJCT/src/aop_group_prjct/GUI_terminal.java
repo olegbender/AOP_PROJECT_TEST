@@ -40,7 +40,6 @@ public class GUI_terminal extends javax.swing.JFrame {
     private void initComponents() {
 
         TransferPanel = new javax.swing.JPanel();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
         TransferPanelTitle = new javax.swing.JLabel();
         TransferPanelSeparator = new javax.swing.JSeparator();
         TransferPanelLogo1 = new javax.swing.JLabel();
@@ -81,34 +80,13 @@ public class GUI_terminal extends javax.swing.JFrame {
         cButton28 = new javax.swing.JButton();
         cButton29 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        CardPanel = new javax.swing.JPanel();
-        cBankLabel = new javax.swing.JLabel();
-        InsertLabel = new javax.swing.JLabel();
-        SignInLabel = new javax.swing.JLabel();
-        CardField = new javax.swing.JFormattedTextField();
-        cButton1 = new javax.swing.JButton();
-        cButton2 = new javax.swing.JButton();
-        cButton3 = new javax.swing.JButton();
-        cButton4 = new javax.swing.JButton();
-        cButton5 = new javax.swing.JButton();
-        cButton6 = new javax.swing.JButton();
-        cButton7 = new javax.swing.JButton();
-        cButton8 = new javax.swing.JButton();
-        cButton9 = new javax.swing.JButton();
-        cButtonDel = new javax.swing.JButton();
-        cButton0 = new javax.swing.JButton();
-        cButtonNext = new javax.swing.JButton();
-        CardLabel = new javax.swing.JLabel();
-        PanelUserMenu = new javax.swing.JPanel();
-        PanelMenuLogo = new javax.swing.JLabel();
-        PanelMenuSeparator = new javax.swing.JSeparator();
-        PanelMenuTitle = new javax.swing.JLabel();
-        PanelMenuTopUp = new javax.swing.JLabel();
-        PanelMenuReplenish = new javax.swing.JLabel();
-        PanelMenuContacts = new javax.swing.JLabel();
-        PanelMenuBalance = new javax.swing.JLabel();
-        PanelMenuTransfer = new javax.swing.JLabel();
-        PanelMenuExit = new javax.swing.JLabel();
+        SuccessTransactionPanel = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        PanelMenuExit1 = new javax.swing.JLabel();
+        PanelMenuExit2 = new javax.swing.JLabel();
+        PanelMenuExit3 = new javax.swing.JLabel();
+        PanelMenuContacts1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         PinPanel = new javax.swing.JPanel();
         WrongPinFrame = new javax.swing.JInternalFrame();
         wpLabel1 = new javax.swing.JLabel();
@@ -130,6 +108,34 @@ public class GUI_terminal extends javax.swing.JFrame {
         pButtonDel = new javax.swing.JButton();
         pButtonNext = new javax.swing.JButton();
         pPasswordField = new javax.swing.JPasswordField();
+        PanelUserMenu = new javax.swing.JPanel();
+        PanelMenuLogo = new javax.swing.JLabel();
+        PanelMenuSeparator = new javax.swing.JSeparator();
+        PanelMenuTitle = new javax.swing.JLabel();
+        PanelMenuTopUp = new javax.swing.JLabel();
+        PanelMenuReplenish = new javax.swing.JLabel();
+        PanelMenuContacts = new javax.swing.JLabel();
+        PanelMenuBalance = new javax.swing.JLabel();
+        PanelMenuTransfer = new javax.swing.JLabel();
+        PanelMenuExit = new javax.swing.JLabel();
+        CardPanel = new javax.swing.JPanel();
+        cBankLabel = new javax.swing.JLabel();
+        InsertLabel = new javax.swing.JLabel();
+        SignInLabel = new javax.swing.JLabel();
+        CardField = new javax.swing.JFormattedTextField();
+        cButton1 = new javax.swing.JButton();
+        cButton2 = new javax.swing.JButton();
+        cButton3 = new javax.swing.JButton();
+        cButton4 = new javax.swing.JButton();
+        cButton5 = new javax.swing.JButton();
+        cButton6 = new javax.swing.JButton();
+        cButton7 = new javax.swing.JButton();
+        cButton8 = new javax.swing.JButton();
+        cButton9 = new javax.swing.JButton();
+        cButtonDel = new javax.swing.JButton();
+        cButton0 = new javax.swing.JButton();
+        cButtonNext = new javax.swing.JButton();
+        CardLabel = new javax.swing.JLabel();
         StartPanel = new javax.swing.JPanel();
         sBankLabel = new javax.swing.JLabel();
         sLabel1 = new javax.swing.JLabel();
@@ -166,21 +172,6 @@ public class GUI_terminal extends javax.swing.JFrame {
         });
         TransferPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         TransferPanel.setVisible(false);
-
-        jInternalFrame1.setVisible(true);
-
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        TransferPanel.add(jInternalFrame1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, 350, 260));
 
         TransferPanelTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
         TransferPanelTitle.setForeground(new java.awt.Color(255, 255, 255));
@@ -236,7 +227,7 @@ public class GUI_terminal extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(34, 34, 34)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
 
         TransferPanel.add(TransferPanelSenderCard, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 62, 315, 160));
@@ -519,7 +510,7 @@ public class GUI_terminal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        TransferPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
+        TransferPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 227, -1, -1));
 
         jPanel2.setVisible(false);
 
@@ -690,9 +681,462 @@ public class GUI_terminal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        TransferPanel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, -1, 150));
+        TransferPanel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 227, -1, 150));
 
         getContentPane().add(TransferPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
+
+        SuccessTransactionPanel.setBackground(new java.awt.Color(0, 102, 0));
+        SuccessTransactionPanel.setMaximumSize(new java.awt.Dimension(290, 290));
+        SuccessTransactionPanel.setVisible(false);
+
+        jLabel6.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTransferMoney.png"))); // NOI18N
+        jLabel6.setText("Success transaction");
+
+        PanelMenuExit1.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit1.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuExit1.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
+        PanelMenuExit1.setText(" Exit");
+        PanelMenuExit1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuExit1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuExit1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuExit1MouseClicked(evt);
+            }
+        });
+
+        PanelMenuExit2.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit2.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuExit2.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTryAgain.png"))); // NOI18N
+        PanelMenuExit2.setText("Try again");
+        PanelMenuExit2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuExit2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuExit2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuExit2MouseClicked(evt);
+            }
+        });
+
+        PanelMenuExit3.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit3.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuExit3.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTopMenu.png"))); // NOI18N
+        PanelMenuExit3.setText("Menu");
+        PanelMenuExit3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuExit3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuExit3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuExit3MouseClicked(evt);
+            }
+        });
+
+        PanelMenuContacts1.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuContacts1.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuContacts1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconHelp.png"))); // NOI18N
+        PanelMenuContacts1.setText("Contacts");
+        PanelMenuContacts1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuContacts1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        jLabel7.setBackground(new java.awt.Color(255, 255, 0));
+        jLabel7.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 51, 102));
+        jLabel7.setText("               Error: Check your balance or try later!");
+        jLabel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 3, true));
+        jLabel7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jLabel7.setVisible(false);
+
+        javax.swing.GroupLayout SuccessTransactionPanelLayout = new javax.swing.GroupLayout(SuccessTransactionPanel);
+        SuccessTransactionPanel.setLayout(SuccessTransactionPanelLayout);
+        SuccessTransactionPanelLayout.setHorizontalGroup(
+            SuccessTransactionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SuccessTransactionPanelLayout.createSequentialGroup()
+                .addGap(9, 9, 9)
+                .addComponent(jLabel6)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(SuccessTransactionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(SuccessTransactionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(PanelMenuExit2, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PanelMenuExit1, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(SuccessTransactionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(PanelMenuExit3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PanelMenuContacts1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16))
+            .addGroup(SuccessTransactionPanelLayout.createSequentialGroup()
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 694, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        SuccessTransactionPanelLayout.setVerticalGroup(
+            SuccessTransactionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SuccessTransactionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel6)
+                .addGap(27, 27, 27)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addGroup(SuccessTransactionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuExit1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PanelMenuExit3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(SuccessTransactionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuExit2)
+                    .addComponent(PanelMenuContacts1))
+                .addGap(87, 87, 87))
+        );
+
+        getContentPane().add(SuccessTransactionPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
+
+        PinPanel.setBackground(new java.awt.Color(51, 102, 0));
+        PinPanel.setVisible(false);
+        PinPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        WrongPinFrame.setBackground(new java.awt.Color(204, 204, 204));
+        WrongPinFrame.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        WrongPinFrame.setForeground(new java.awt.Color(255, 255, 255));
+        WrongPinFrame.setTitle("UnprivateBank Message");
+        WrongPinFrame.setVisible(false);
+
+        wpLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconWrongPincode.png"))); // NOI18N
+
+        wpLabel2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        wpLabel2.setText("Wrong Pincode");
+
+        wpButton1.setBackground(new java.awt.Color(204, 204, 204));
+        wpButton1.setFont(new java.awt.Font("Marcellus SC", 1, 12)); // NOI18N
+        wpButton1.setText("Go to Log-In");
+        wpButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                wpButton1ActionPerformed(evt);
+            }
+        });
+
+        wpButton2.setBackground(new java.awt.Color(204, 204, 204));
+        wpButton2.setFont(new java.awt.Font("Marcellus SC", 1, 12)); // NOI18N
+        wpButton2.setText("Try one more");
+        wpButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                wpButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout WrongPinFrameLayout = new javax.swing.GroupLayout(WrongPinFrame.getContentPane());
+        WrongPinFrame.getContentPane().setLayout(WrongPinFrameLayout);
+        WrongPinFrameLayout.setHorizontalGroup(
+            WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(WrongPinFrameLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(wpButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(wpLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                .addComponent(wpButton2)
+                .addContainerGap())
+            .addGroup(WrongPinFrameLayout.createSequentialGroup()
+                .addGap(77, 77, 77)
+                .addComponent(wpLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        WrongPinFrameLayout.setVerticalGroup(
+            WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WrongPinFrameLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(wpLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(wpLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(wpButton1)
+                    .addComponent(wpButton2))
+                .addGap(24, 24, 24))
+        );
+
+        PinPanel.add(WrongPinFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 350, 210));
+
+        pBankLabel.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        pBankLabel.setForeground(new java.awt.Color(255, 255, 255));
+        pBankLabel.setText("UnprivateBank");
+        PinPanel.add(pBankLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 277, -1));
+
+        pEnterLabel.setBackground(new java.awt.Color(102, 102, 0));
+        pEnterLabel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pEnterLabel.setForeground(new java.awt.Color(255, 255, 255));
+        pEnterLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPin.png"))); // NOI18N
+        pEnterLabel.setText("Enter PIN");
+        PinPanel.add(pEnterLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 65, 315, -1));
+
+        pButton1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton1.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton1.setText("1");
+        pButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton1ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 183, 60, 39));
+
+        pButton2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton2.setText("2");
+        pButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton2ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 183, 60, 39));
+
+        pButton3.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton3.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton3.setText("3");
+        pButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton3ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 183, 60, 39));
+
+        pButton4.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton4.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton4.setText("4");
+        pButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton4ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 228, 60, 39));
+
+        pButton5.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton5.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton5.setText("5");
+        pButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton5ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 228, 60, 39));
+
+        pButton6.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton6.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton6.setText("6");
+        pButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton6ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 228, 60, 39));
+
+        pButton7.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton7.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton7.setText("7");
+        pButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton7ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 274, 60, 39));
+
+        pButton8.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton8.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton8.setText("8");
+        pButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton8ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 274, 60, 39));
+
+        pButton9.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton9.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton9.setText("9");
+        pButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton9ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 274, 60, 39));
+
+        pButton0.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        pButton0.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButton0.setText("0");
+        pButton0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButton0ActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 319, 60, 39));
+
+        pButtonDel.setBackground(new java.awt.Color(204, 0, 0));
+        pButtonDel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButtonDel.setText("X");
+        pButtonDel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButtonDelActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButtonDel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 319, 60, 39));
+
+        pButtonNext.setBackground(new java.awt.Color(51, 204, 0));
+        pButtonNext.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        pButtonNext.setText("Next");
+        pButtonNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButtonNextActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pButtonNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 319, 60, 39));
+
+        pPasswordField.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        pPasswordField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        pPasswordField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 3, true));
+        pPasswordField.setEchoChar('\u25cf');
+        pPasswordField.setFocusAccelerator('\u25b2');
+        pPasswordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pPasswordFieldActionPerformed(evt);
+            }
+        });
+        PinPanel.add(pPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 127, 192, 46));
+
+        getContentPane().add(PinPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
+
+        PanelUserMenu.setBackground(new java.awt.Color(0, 102, 0));
+        PanelUserMenu.setVisible(false);
+
+        PanelMenuLogo.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        PanelMenuLogo.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
+        PanelMenuLogo.setText("UnprivateBank");
+
+        PanelMenuSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        PanelMenuSeparator.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+
+        PanelMenuTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        PanelMenuTitle.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTitle.setText("Main menu");
+
+        PanelMenuTopUp.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuTopUp.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuTopUp.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTopUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPhone.png"))); // NOI18N
+        PanelMenuTopUp.setText("   Top up account");
+        PanelMenuTopUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuTopUp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        PanelMenuReplenish.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuReplenish.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuReplenish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconCard.png"))); // NOI18N
+        PanelMenuReplenish.setText("Replenish the card");
+        PanelMenuReplenish.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        PanelMenuReplenish.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuReplenish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuReplenishMouseClicked(evt);
+            }
+        });
+
+        PanelMenuContacts.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuContacts.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuContacts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconHelp.png"))); // NOI18N
+        PanelMenuContacts.setText("Contact with us");
+        PanelMenuContacts.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuContacts.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        PanelMenuBalance.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuBalance.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuBalance.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuBalance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconBalance.png"))); // NOI18N
+        PanelMenuBalance.setText("   Check balance");
+        PanelMenuBalance.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuBalance.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuBalanceMouseClicked(evt);
+            }
+        });
+
+        PanelMenuTransfer.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuTransfer.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuTransfer.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTransfer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTransfer.png"))); // NOI18N
+        PanelMenuTransfer.setText("   Make transfer");
+        PanelMenuTransfer.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuTransfer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuTransfer.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuTransferMouseClicked(evt);
+            }
+        });
+
+        PanelMenuExit.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuExit.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
+        PanelMenuExit.setText("          Exit");
+        PanelMenuExit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuExitMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelUserMenuLayout = new javax.swing.GroupLayout(PanelUserMenu);
+        PanelUserMenu.setLayout(PanelUserMenuLayout);
+        PanelUserMenuLayout.setHorizontalGroup(
+            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                        .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
+                                .addComponent(PanelMenuContacts, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(PanelMenuExit, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
+                                .addComponent(PanelMenuReplenish, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(240, 240, 240)
+                                .addComponent(PanelMenuTransfer, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(14, Short.MAX_VALUE))
+                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                        .addComponent(PanelMenuTopUp, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(PanelMenuBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(14, 14, 14))
+                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                        .addComponent(PanelMenuLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(PanelMenuSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(PanelMenuTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))))
+        );
+        PanelUserMenuLayout.setVerticalGroup(
+            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(PanelMenuTitle)
+                    .addComponent(PanelMenuSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PanelMenuLogo))
+                .addGap(29, 29, 29)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuTopUp)
+                    .addComponent(PanelMenuBalance))
+                .addGap(7, 7, 7)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuReplenish)
+                    .addComponent(PanelMenuTransfer))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuContacts)
+                    .addComponent(PanelMenuExit))
+                .addContainerGap(119, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(PanelUserMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
         CardPanel.setBackground(new java.awt.Color(0, 100, 39));
 
@@ -929,354 +1373,6 @@ public class GUI_terminal extends javax.swing.JFrame {
 
         getContentPane().add(CardPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, -1));
         CardPanel.setVisible(false);
-
-        PanelUserMenu.setBackground(new java.awt.Color(0, 102, 0));
-        PanelUserMenu.setVisible(false);
-
-        PanelMenuLogo.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        PanelMenuLogo.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
-        PanelMenuLogo.setText("UnprivateBank");
-
-        PanelMenuSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        PanelMenuSeparator.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-
-        PanelMenuTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        PanelMenuTitle.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTitle.setText("Main menu");
-
-        PanelMenuTopUp.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuTopUp.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuTopUp.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTopUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPhone.png"))); // NOI18N
-        PanelMenuTopUp.setText("   Top up account");
-        PanelMenuTopUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuTopUp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        PanelMenuReplenish.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuReplenish.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuReplenish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconCard.png"))); // NOI18N
-        PanelMenuReplenish.setText("Replenish the card");
-        PanelMenuReplenish.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        PanelMenuReplenish.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuReplenish.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuReplenishMouseClicked(evt);
-            }
-        });
-
-        PanelMenuContacts.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuContacts.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuContacts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconHelp.png"))); // NOI18N
-        PanelMenuContacts.setText("Contact with us");
-        PanelMenuContacts.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuContacts.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        PanelMenuBalance.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuBalance.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuBalance.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuBalance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconBalance.png"))); // NOI18N
-        PanelMenuBalance.setText("   Check balance");
-        PanelMenuBalance.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuBalance.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuBalanceMouseClicked(evt);
-            }
-        });
-
-        PanelMenuTransfer.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuTransfer.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuTransfer.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTransfer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTransfer.png"))); // NOI18N
-        PanelMenuTransfer.setText("   Make transfer");
-        PanelMenuTransfer.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuTransfer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuTransfer.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuTransferMouseClicked(evt);
-            }
-        });
-
-        PanelMenuExit.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuExit.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuExit.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
-        PanelMenuExit.setText("          Exit");
-        PanelMenuExit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuExitMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout PanelUserMenuLayout = new javax.swing.GroupLayout(PanelUserMenu);
-        PanelUserMenu.setLayout(PanelUserMenuLayout);
-        PanelUserMenuLayout.setHorizontalGroup(
-            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
-                                .addComponent(PanelMenuContacts, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(PanelMenuExit, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
-                                .addComponent(PanelMenuReplenish, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(240, 240, 240)
-                                .addComponent(PanelMenuTransfer, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(14, Short.MAX_VALUE))
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addComponent(PanelMenuTopUp, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(PanelMenuBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14))
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addComponent(PanelMenuLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
-                        .addComponent(PanelMenuSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(PanelMenuTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38))))
-        );
-        PanelUserMenuLayout.setVerticalGroup(
-            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(PanelMenuTitle)
-                    .addComponent(PanelMenuSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PanelMenuLogo))
-                .addGap(29, 29, 29)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuTopUp)
-                    .addComponent(PanelMenuBalance))
-                .addGap(7, 7, 7)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuReplenish)
-                    .addComponent(PanelMenuTransfer))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuContacts)
-                    .addComponent(PanelMenuExit))
-                .addContainerGap(119, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(PanelUserMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
-
-        PinPanel.setBackground(new java.awt.Color(51, 102, 0));
-        PinPanel.setVisible(false);
-        PinPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        WrongPinFrame.setBackground(new java.awt.Color(204, 204, 204));
-        WrongPinFrame.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        WrongPinFrame.setForeground(new java.awt.Color(255, 255, 255));
-        WrongPinFrame.setTitle("UnprivateBank Message");
-        WrongPinFrame.setVisible(false);
-
-        wpLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconWrongPincode.png"))); // NOI18N
-
-        wpLabel2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        wpLabel2.setText("Wrong Pincode");
-
-        wpButton1.setBackground(new java.awt.Color(204, 204, 204));
-        wpButton1.setFont(new java.awt.Font("Marcellus SC", 1, 12)); // NOI18N
-        wpButton1.setText("Go to Log-In");
-        wpButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                wpButton1ActionPerformed(evt);
-            }
-        });
-
-        wpButton2.setBackground(new java.awt.Color(204, 204, 204));
-        wpButton2.setFont(new java.awt.Font("Marcellus SC", 1, 12)); // NOI18N
-        wpButton2.setText("Try one more");
-        wpButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                wpButton2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout WrongPinFrameLayout = new javax.swing.GroupLayout(WrongPinFrame.getContentPane());
-        WrongPinFrame.getContentPane().setLayout(WrongPinFrameLayout);
-        WrongPinFrameLayout.setHorizontalGroup(
-            WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(WrongPinFrameLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(wpButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(wpLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
-                .addComponent(wpButton2)
-                .addContainerGap())
-            .addGroup(WrongPinFrameLayout.createSequentialGroup()
-                .addGap(77, 77, 77)
-                .addComponent(wpLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        WrongPinFrameLayout.setVerticalGroup(
-            WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WrongPinFrameLayout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(wpLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(wpLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(wpButton1)
-                    .addComponent(wpButton2))
-                .addGap(24, 24, 24))
-        );
-
-        PinPanel.add(WrongPinFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 350, 210));
-
-        pBankLabel.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        pBankLabel.setForeground(new java.awt.Color(255, 255, 255));
-        pBankLabel.setText("UnprivateBank");
-        PinPanel.add(pBankLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 277, -1));
-
-        pEnterLabel.setBackground(new java.awt.Color(102, 102, 0));
-        pEnterLabel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pEnterLabel.setForeground(new java.awt.Color(255, 255, 255));
-        pEnterLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPin.png"))); // NOI18N
-        pEnterLabel.setText("Enter PIN");
-        PinPanel.add(pEnterLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 65, 315, -1));
-
-        pButton1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton1.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton1.setText("1");
-        pButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton1ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 183, 60, 39));
-
-        pButton2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton2.setText("2");
-        pButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton2ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 183, 60, 39));
-
-        pButton3.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton3.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton3.setText("3");
-        pButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton3ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 183, 60, 39));
-
-        pButton4.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton4.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton4.setText("4");
-        pButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton4ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 228, 60, 39));
-
-        pButton5.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton5.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton5.setText("5");
-        pButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton5ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 228, 60, 39));
-
-        pButton6.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton6.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton6.setText("6");
-        pButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton6ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 228, 60, 39));
-
-        pButton7.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton7.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton7.setText("7");
-        pButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton7ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 274, 60, 39));
-
-        pButton8.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton8.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton8.setText("8");
-        pButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton8ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 274, 60, 39));
-
-        pButton9.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton9.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton9.setText("9");
-        pButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton9ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 274, 60, 39));
-
-        pButton0.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        pButton0.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButton0.setText("0");
-        pButton0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButton0ActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButton0, new org.netbeans.lib.awtextra.AbsoluteConstraints(316, 319, 60, 39));
-
-        pButtonDel.setBackground(new java.awt.Color(204, 0, 0));
-        pButtonDel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButtonDel.setText("X");
-        pButtonDel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButtonDelActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButtonDel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 319, 60, 39));
-
-        pButtonNext.setBackground(new java.awt.Color(51, 204, 0));
-        pButtonNext.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        pButtonNext.setText("Next");
-        pButtonNext.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pButtonNextActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pButtonNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 319, 60, 39));
-
-        pPasswordField.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        pPasswordField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        pPasswordField.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 3, true));
-        pPasswordField.setEchoChar('\u25cf');
-        pPasswordField.setFocusAccelerator('\u25b2');
-        pPasswordField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pPasswordFieldActionPerformed(evt);
-            }
-        });
-        PinPanel.add(pPasswordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 127, 192, 46));
-
-        getContentPane().add(PinPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
         StartPanel.setBackground(new java.awt.Color(0, 100, 39));
 
@@ -1650,6 +1746,7 @@ public class GUI_terminal extends javax.swing.JFrame {
         if (stringPassword.length() == 4) {
             int inputPassword = Integer.parseInt(new String(pPasswordField.getPassword()));
             if (inputPassword == currentUser.getPin()) {
+                pPasswordField.setText("");
                 PinPanel.setVisible(false);
                 PanelUserMenu.setVisible(true);
             } else {
@@ -1998,8 +2095,21 @@ public class GUI_terminal extends javax.swing.JFrame {
                     System.out.println(jFormattedTextField2.getText());
                 }
                 if (valueToSendInputResult != 0) {
-                    DataBaseObject.Transfer(currentUser.getId(), receiverUser.getId(), valueToSendInputResult);
+                    if (DataBaseObject.Transfer(currentUser.getId(), receiverUser.getId(), valueToSendInputResult)) {
+                        TransferPanel.setVisible(false);
+                        SuccessTransactionPanel.setVisible(true);
+                        jLabel7.setVisible(false);
+                        jLabel6.setText("Success transfer");
+                    } else {
+                        TransferPanel.setVisible(false);
+                        SuccessTransactionPanel.setVisible(true);
+                        jLabel7.setVisible(true);
+                        jLabel6.setText("Failed transfer");
+                    }
+                    jPanel1.setVisible(false);
+                    jPanel2.setVisible(false);
                     jFormattedTextField2.setValue("0");
+                    CardField1.setValue("");
                 }
 
             } else {
@@ -2038,13 +2148,13 @@ public class GUI_terminal extends javax.swing.JFrame {
     private void cButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton20ActionPerformed
         // TODO add your handling code here:
 //        TB.AddDigitToCardField(CardField1, 7);
- TB.addDigitToTransferCardField(CardField1, 7, jLabel2, currentUser, jPanel2);
+        TB.addDigitToTransferCardField(CardField1, 7, jLabel2, currentUser, jPanel2);
     }//GEN-LAST:event_cButton20ActionPerformed
 
     private void cButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton21ActionPerformed
         // TODO add your handling code here:
 //        TB.AddDigitToCardField(CardField1, 4);
-         TB.addDigitToTransferCardField(CardField1, 4, jLabel2, currentUser, jPanel2);
+        TB.addDigitToTransferCardField(CardField1, 4, jLabel2, currentUser, jPanel2);
     }//GEN-LAST:event_cButton21ActionPerformed
 
     private void cButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton22ActionPerformed
@@ -2157,6 +2267,31 @@ public class GUI_terminal extends javax.swing.JFrame {
         jPanel2.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void PanelMenuExit1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelMenuExit1MouseClicked
+        // TODO add your handling code here:
+        currentUser = null;
+        SuccessTransactionPanel.setVisible(false);
+//        TransferPanel.setVisible(false);
+        StartPanel.setVisible(true);
+    }//GEN-LAST:event_PanelMenuExit1MouseClicked
+
+    private void PanelMenuExit2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelMenuExit2MouseClicked
+        // TODO add your handling code here:
+        CardField1.setValue("");
+        jFormattedTextField2.setValue("0");
+        jLabel1.setText("Sender");
+        jLabel2.setText("Receiver");
+        SuccessTransactionPanel.setVisible(false);
+        TransferPanel.setVisible(true);
+    }//GEN-LAST:event_PanelMenuExit2MouseClicked
+
+    private void PanelMenuExit3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelMenuExit3MouseClicked
+        // TODO add your handling code here:
+        
+        SuccessTransactionPanel.setVisible(false);
+        PanelUserMenu.setVisible(true);
+    }//GEN-LAST:event_PanelMenuExit3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -2199,7 +2334,11 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JLabel InsertLabel;
     private javax.swing.JLabel PanelMenuBalance;
     private javax.swing.JLabel PanelMenuContacts;
+    private javax.swing.JLabel PanelMenuContacts1;
     private javax.swing.JLabel PanelMenuExit;
+    private javax.swing.JLabel PanelMenuExit1;
+    private javax.swing.JLabel PanelMenuExit2;
+    private javax.swing.JLabel PanelMenuExit3;
     private javax.swing.JLabel PanelMenuLogo;
     private javax.swing.JLabel PanelMenuReplenish;
     private javax.swing.JSeparator PanelMenuSeparator;
@@ -2210,6 +2349,7 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JPanel PinPanel;
     private javax.swing.JLabel SignInLabel;
     private javax.swing.JPanel StartPanel;
+    private javax.swing.JPanel SuccessTransactionPanel;
     private javax.swing.JPanel TransferPanel;
     private javax.swing.JLabel TransferPanelLogo1;
     private javax.swing.JPanel TransferPanelSenderCard;
@@ -2256,12 +2396,13 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JFormattedTextField jFormattedTextField2;
-    private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField1;
