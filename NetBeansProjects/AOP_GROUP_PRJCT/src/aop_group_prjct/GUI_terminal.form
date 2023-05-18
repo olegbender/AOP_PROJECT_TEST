@@ -297,7 +297,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="50" y="230" width="-1" height="-1"/>
+              <AbsoluteConstraints x="10" y="230" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
 
@@ -572,7 +572,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="370" y="230" width="-1" height="-1"/>
+              <AbsoluteConstraints x="360" y="230" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
 
@@ -610,9 +610,7 @@
                               <Component id="cButtonNext2" min="-2" pref="60" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="32" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="44" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -620,30 +618,25 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="16" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="cButton21" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButton22" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButton23" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButton24" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="cButton26" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButton25" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButton20" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButton27" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="cButton28" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButton29" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButtonDel2" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                                  <Component id="cButtonNext2" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="jButton2" alignment="1" min="-2" pref="129" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cButton21" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButton22" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButton23" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButton24" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cButton26" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButton25" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButton20" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButton27" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cButton28" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButton29" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButtonDel2" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="cButtonNext2" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -806,14 +799,6 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cButton29ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JButton" name="jButton2">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jButton1"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
               </Events>
             </Component>
             <Component class="javax.swing.JButton" name="cButtonNext2">

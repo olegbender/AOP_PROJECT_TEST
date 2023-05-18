@@ -79,7 +79,6 @@ public class GUI_terminal extends javax.swing.JFrame {
         cButton27 = new javax.swing.JButton();
         cButton28 = new javax.swing.JButton();
         cButton29 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         cButtonNext2 = new javax.swing.JButton();
         CardPanel = new javax.swing.JPanel();
         cBankLabel = new javax.swing.JLabel();
@@ -498,7 +497,7 @@ public class GUI_terminal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        TransferPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, -1, -1));
+        TransferPanel.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
 
         jPanel2.setVisible(false);
 
@@ -602,13 +601,6 @@ public class GUI_terminal extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("jButton1");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
         cButtonNext2.setBackground(new java.awt.Color(51, 204, 0));
         cButtonNext2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
         cButtonNext2.setText("Next");
@@ -649,38 +641,33 @@ public class GUI_terminal extends javax.swing.JFrame {
                         .addComponent(cButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cButtonNext2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(16, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(cButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButtonDel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(cButtonNext2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButtonDel2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButtonNext2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
-        TransferPanel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, -1, -1));
+        TransferPanel.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, -1, -1));
 
         getContentPane().add(TransferPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
@@ -2072,11 +2059,6 @@ public class GUI_terminal extends javax.swing.JFrame {
         TB.AddDigitToCardField(CardField1, 0);
     }//GEN-LAST:event_cButton29ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        jPanel2.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void CardField1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CardField1MouseClicked
         // TODO add your handling code here:
         jPanel2.setVisible(true);
@@ -2084,25 +2066,30 @@ public class GUI_terminal extends javax.swing.JFrame {
 
     private void cButtonNext2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonNext2ActionPerformed
         // TODO add your handling code here:
-         System.out.println("Caret moved");
+        System.out.println("Caret moved");
         String cardInputResult;
         try {
             cardInputResult = CardField1.getValue().toString();
-            if(cardInputResult.length() == 19) {
+            if (cardInputResult.length() == 19) {
                 User cardUser = null;
                 List<User> users = DataBaseObject.SelectAll();
-                for(int i = 0; i < users.size(); i ++) {
-                    if(users.get(i).getCard_Number().equals(cardInputResult)) {
+                for (int i = 0; i < users.size(); i++) {
+                    if (users.get(i).getCard_Number().equals(cardInputResult)) {
                         cardUser = users.get(i);
                     }
                 }
-                if(cardUser != null) jLabel2.setText("Receiver: " + cardUser.getUser_name());
+                if (cardUser != null && !cardUser.getCard_Number().equals(currentUser.getCard_Number())) {
+                    jLabel2.setText("Receiver: " + cardUser.getUser_name());
+                    jPanel2.setVisible(false);
+                } else {
+                    jLabel2.setText("Receiver: No such receiver");
+                }
             }
-            
+
         } catch (NullPointerException e) {
             CardField1.setValue("");
 //            cardInputResult = CardField1.getValue().toString();
-        }        
+        }
     }//GEN-LAST:event_cButtonNext2ActionPerformed
 
     private void CardField1CaretPositionChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_CardField1CaretPositionChanged
@@ -2126,7 +2113,7 @@ public class GUI_terminal extends javax.swing.JFrame {
 //            CardField1.setValue("");
 ////            cardInputResult = CardField1.getValue().toString();
 //        }
-        
+
     }//GEN-LAST:event_CardField1CaretPositionChanged
 
     private void CardField1InputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_CardField1InputMethodTextChanged
@@ -2250,7 +2237,6 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JButton cButtonNext1;
     private javax.swing.JButton cButtonNext2;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
