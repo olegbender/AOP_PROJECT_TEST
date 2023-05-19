@@ -87,7 +87,7 @@
                   <Component id="cbBalanceLabel1" min="-2" pref="30" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="cbBalanceLabel" min="-2" pref="30" max="-2" attributes="0"/>
-                  <EmptySpace pref="77" max="32767" attributes="0"/>
+                  <EmptySpace pref="87" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="cbExitPanel" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="cbMenuPanel" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -613,7 +613,7 @@
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JInternalFrame" name="WrongPinFrame">
+        <Container class="javax.swing.JInternalFrame" name="pWrongPinFrame">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="cc" type="rgb"/>

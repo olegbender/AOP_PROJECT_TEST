@@ -63,7 +63,7 @@ public class GUI_terminal extends javax.swing.JFrame {
         cButtonNext = new javax.swing.JButton();
         CardLabel = new javax.swing.JLabel();
         PinPanel = new javax.swing.JPanel();
-        WrongPinFrame = new javax.swing.JInternalFrame();
+        pWrongPinFrame = new javax.swing.JInternalFrame();
         wpLabel1 = new javax.swing.JLabel();
         wpLabel2 = new javax.swing.JLabel();
         wpButton1 = new javax.swing.JButton();
@@ -210,7 +210,7 @@ public class GUI_terminal extends javax.swing.JFrame {
                 .addComponent(cbBalanceLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(cbBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                 .addGroup(CheckBalancePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cbExitPanel)
                     .addComponent(cbMenuPanel))
@@ -463,11 +463,11 @@ public class GUI_terminal extends javax.swing.JFrame {
         PinPanel.setVisible(false);
         PinPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        WrongPinFrame.setBackground(new java.awt.Color(204, 204, 204));
-        WrongPinFrame.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
-        WrongPinFrame.setForeground(new java.awt.Color(255, 255, 255));
-        WrongPinFrame.setTitle("UnprivateBank Message");
-        WrongPinFrame.setVisible(false);
+        pWrongPinFrame.setBackground(new java.awt.Color(204, 204, 204));
+        pWrongPinFrame.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        pWrongPinFrame.setForeground(new java.awt.Color(255, 255, 255));
+        pWrongPinFrame.setTitle("UnprivateBank Message");
+        pWrongPinFrame.setVisible(false);
 
         wpLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconWrongPincode.png"))); // NOI18N
 
@@ -492,11 +492,11 @@ public class GUI_terminal extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout WrongPinFrameLayout = new javax.swing.GroupLayout(WrongPinFrame.getContentPane());
-        WrongPinFrame.getContentPane().setLayout(WrongPinFrameLayout);
-        WrongPinFrameLayout.setHorizontalGroup(
-            WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(WrongPinFrameLayout.createSequentialGroup()
+        javax.swing.GroupLayout pWrongPinFrameLayout = new javax.swing.GroupLayout(pWrongPinFrame.getContentPane());
+        pWrongPinFrame.getContentPane().setLayout(pWrongPinFrameLayout);
+        pWrongPinFrameLayout.setHorizontalGroup(
+            pWrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pWrongPinFrameLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(wpButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -504,25 +504,25 @@ public class GUI_terminal extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
                 .addComponent(wpButton2)
                 .addContainerGap())
-            .addGroup(WrongPinFrameLayout.createSequentialGroup()
+            .addGroup(pWrongPinFrameLayout.createSequentialGroup()
                 .addGap(77, 77, 77)
                 .addComponent(wpLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        WrongPinFrameLayout.setVerticalGroup(
-            WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, WrongPinFrameLayout.createSequentialGroup()
+        pWrongPinFrameLayout.setVerticalGroup(
+            pWrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pWrongPinFrameLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(wpLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(WrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(pWrongPinFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(wpLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(wpButton1)
                     .addComponent(wpButton2))
                 .addGap(24, 24, 24))
         );
 
-        PinPanel.add(WrongPinFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 350, 210));
+        PinPanel.add(pWrongPinFrame, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 350, 210));
 
         pBankLabel.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
         pBankLabel.setForeground(new java.awt.Color(255, 255, 255));
@@ -1176,7 +1176,7 @@ public class GUI_terminal extends javax.swing.JFrame {
                 PinPanel.setVisible(false);
                 PanelUserMenu.setVisible(true);
             } else {
-                WrongPinFrame.setVisible(true);
+                pWrongPinFrame.setVisible(true);
                 System.out.println("ERROR: wrong PIN");
             }
         }
@@ -1306,7 +1306,7 @@ public class GUI_terminal extends javax.swing.JFrame {
 
     private void wpButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wpButton1ActionPerformed
         // TODO add your handling code here:
-        WrongPinFrame.setVisible(false);
+        pWrongPinFrame.setVisible(false);
         pPasswordField.setText("");
         PinPanel.setVisible(false);
         StartPanel.setVisible(true);
@@ -1315,7 +1315,7 @@ public class GUI_terminal extends javax.swing.JFrame {
 
     private void wpButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wpButton2ActionPerformed
         // TODO add your handling code here:
-         WrongPinFrame.setVisible(false);
+         pWrongPinFrame.setVisible(false);
         pPasswordField.setText("");
     }//GEN-LAST:event_wpButton2ActionPerformed
 
@@ -1502,7 +1502,6 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JPanel PinPanel;
     private javax.swing.JLabel SignInLabel;
     private javax.swing.JPanel StartPanel;
-    private javax.swing.JInternalFrame WrongPinFrame;
     private javax.swing.JLabel cBankLabel;
     private javax.swing.JButton cButton0;
     private javax.swing.JButton cButton1;
@@ -1538,6 +1537,7 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JButton pButtonNext;
     private javax.swing.JLabel pEnterLabel;
     private javax.swing.JPasswordField pPasswordField;
+    private javax.swing.JInternalFrame pWrongPinFrame;
     private javax.swing.JLabel sBankLabel;
     private javax.swing.JButton sButton0;
     private javax.swing.JButton sButton1;
