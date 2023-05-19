@@ -82,7 +82,14 @@ public class ConnectDB {
             return false;
         }
     }
-    
+    public User GetUserById(int id) {
+        User user = null;
+        List<User> users = SelectAll();
+        for(int i = 0; i < users.size(); i ++) {
+            if(users.get(i).getId() == id) user = users.get(i);
+        }
+        return user;
+    }
     
     public Connection connect() {
         String url = "jdbc:sqlite:bankDB.db";
