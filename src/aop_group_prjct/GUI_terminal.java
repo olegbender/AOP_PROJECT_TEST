@@ -10,8 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JFormattedTextField.AbstractFormatter;
 import javax.swing.text.MaskFormatter;
-import javax.swing.SwingUtilities;
-import javax.swing.border.Border;
 
 /**
  *
@@ -39,55 +37,31 @@ public class GUI_terminal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        TransferPanel = new javax.swing.JPanel();
-        TransferPanelTitle = new javax.swing.JLabel();
-        TransferPanelSeparator = new javax.swing.JSeparator();
-        TransferPanelLogo1 = new javax.swing.JLabel();
-        TransferPanelSenderCard1 = new javax.swing.JPanel();
-        transferPanelSenderName = new javax.swing.JLabel();
-        transferPanelVisa1 = new javax.swing.JLabel();
-        transferPanelSenderCardNumber = new javax.swing.JTextField();
-        TransferPanelSenderCard2 = new javax.swing.JPanel();
-        transferPanelReceiverName = new javax.swing.JLabel();
-        transferPanelVisa2 = new javax.swing.JLabel();
-        transferPanelReceiverCardNumber = new javax.swing.JFormattedTextField();
-        transferPanelValueTitle = new javax.swing.JLabel();
-        transferPanelValueToSend = new javax.swing.JFormattedTextField();
-        transferPanelValueKeybord = new javax.swing.JPanel();
-        transferPanelKeybordBtnDel = new javax.swing.JButton();
-        transferPanelKeybordBtn7 = new javax.swing.JButton();
-        transferPanelKeybordBtn4 = new javax.swing.JButton();
-        transferPanelKeybordBtn1 = new javax.swing.JButton();
-        transferPanelKeybordBtn2 = new javax.swing.JButton();
-        transferPanelKeybordBtn3 = new javax.swing.JButton();
-        transferPanelKeybordBtn6 = new javax.swing.JButton();
-        transferPanelKeybordBtn5 = new javax.swing.JButton();
-        transferPanelKeybordBtn8 = new javax.swing.JButton();
-        transferPanelKeybordBtn9 = new javax.swing.JButton();
-        transferPanelKeybordBtn0 = new javax.swing.JButton();
-        transferPanelKeybordBtnSub = new javax.swing.JButton();
-        transferPanelKeybordBtnHide = new javax.swing.JButton();
-        transferPanelCardKeybord = new javax.swing.JPanel();
-        transferPanelCardKeybordBtnDel = new javax.swing.JButton();
-        transferPanelCardKeybordBtn7 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn4 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn1 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn2 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn3 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn6 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn5 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn8 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn0 = new javax.swing.JButton();
-        transferPanelCardKeybordBtn9 = new javax.swing.JButton();
-        transferPanelCardKeybordBtnHide = new javax.swing.JButton();
-        TransferPanelBtnMenu = new javax.swing.JLabel();
-        SuccessTransferPanel = new javax.swing.JPanel();
-        SuccessTransferLogo = new javax.swing.JLabel();
-        SuccessTransferBtnExit = new javax.swing.JLabel();
-        SuccessTransferBtnTryAgain = new javax.swing.JLabel();
-        SuccessTransferBtnMenu = new javax.swing.JLabel();
-        SuccessTransferBtnContacts = new javax.swing.JLabel();
-        SuccessTransferErrorMessage = new javax.swing.JLabel();
+        CheckBalancePanel = new javax.swing.JPanel();
+        cbBankLabel = new javax.swing.JLabel();
+        cbSignInLabel = new javax.swing.JLabel();
+        cbBalanceLabel = new javax.swing.JLabel();
+        cbBalanceLabel1 = new javax.swing.JLabel();
+        cbMenuPanel = new javax.swing.JLabel();
+        cbExitPanel = new javax.swing.JLabel();
+        CardPanel = new javax.swing.JPanel();
+        cBankLabel = new javax.swing.JLabel();
+        InsertLabel = new javax.swing.JLabel();
+        SignInLabel = new javax.swing.JLabel();
+        CardField = new javax.swing.JFormattedTextField();
+        cButton1 = new javax.swing.JButton();
+        cButton2 = new javax.swing.JButton();
+        cButton3 = new javax.swing.JButton();
+        cButton4 = new javax.swing.JButton();
+        cButton5 = new javax.swing.JButton();
+        cButton6 = new javax.swing.JButton();
+        cButton7 = new javax.swing.JButton();
+        cButton8 = new javax.swing.JButton();
+        cButton9 = new javax.swing.JButton();
+        cButtonDel = new javax.swing.JButton();
+        cButton0 = new javax.swing.JButton();
+        cButtonNext = new javax.swing.JButton();
+        CardLabel = new javax.swing.JLabel();
         PinPanel = new javax.swing.JPanel();
         WrongPinFrame = new javax.swing.JInternalFrame();
         wpLabel1 = new javax.swing.JLabel();
@@ -109,34 +83,6 @@ public class GUI_terminal extends javax.swing.JFrame {
         pButtonDel = new javax.swing.JButton();
         pButtonNext = new javax.swing.JButton();
         pPasswordField = new javax.swing.JPasswordField();
-        PanelUserMenu = new javax.swing.JPanel();
-        PanelMenuLogo = new javax.swing.JLabel();
-        PanelMenuSeparator = new javax.swing.JSeparator();
-        PanelMenuTitle = new javax.swing.JLabel();
-        PanelMenuTopUp = new javax.swing.JLabel();
-        PanelMenuReplenish = new javax.swing.JLabel();
-        PanelMenuContacts = new javax.swing.JLabel();
-        PanelMenuBalance = new javax.swing.JLabel();
-        PanelMenuTransfer = new javax.swing.JLabel();
-        PanelMenuExit = new javax.swing.JLabel();
-        CardPanel = new javax.swing.JPanel();
-        cBankLabel = new javax.swing.JLabel();
-        InsertLabel = new javax.swing.JLabel();
-        SignInLabel = new javax.swing.JLabel();
-        CardField = new javax.swing.JFormattedTextField();
-        cButton1 = new javax.swing.JButton();
-        cButton2 = new javax.swing.JButton();
-        cButton3 = new javax.swing.JButton();
-        cButton4 = new javax.swing.JButton();
-        cButton5 = new javax.swing.JButton();
-        cButton6 = new javax.swing.JButton();
-        cButton7 = new javax.swing.JButton();
-        cButton8 = new javax.swing.JButton();
-        cButton9 = new javax.swing.JButton();
-        cButtonDel = new javax.swing.JButton();
-        cButton0 = new javax.swing.JButton();
-        cButtonNext = new javax.swing.JButton();
-        CardLabel = new javax.swing.JLabel();
         StartPanel = new javax.swing.JPanel();
         sBankLabel = new javax.swing.JLabel();
         sLabel1 = new javax.swing.JLabel();
@@ -161,651 +107,359 @@ public class GUI_terminal extends javax.swing.JFrame {
         sButton0 = new javax.swing.JButton();
         sButtonDel = new javax.swing.JButton();
         sButtonNext = new javax.swing.JButton();
+        PanelUserMenu = new javax.swing.JPanel();
+        PanelMenuLogo = new javax.swing.JLabel();
+        jSeparator2 = new javax.swing.JSeparator();
+        PanelMenuTitle = new javax.swing.JLabel();
+        PanelMenuTopUp = new javax.swing.JLabel();
+        PanelMenuReplenish = new javax.swing.JLabel();
+        PanelMenuContacts = new javax.swing.JLabel();
+        PanelMenuBalance = new javax.swing.JLabel();
+        PanelMenuTransfer = new javax.swing.JLabel();
+        PanelMenuExit = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        TransferPanel.setBackground(new java.awt.Color(0, 102, 51));
-        TransferPanel.addComponentListener(new java.awt.event.ComponentAdapter() {
+        CheckBalancePanel.setBackground(new java.awt.Color(51, 102, 0));
+        CheckBalancePanel.setPreferredSize(new java.awt.Dimension(700, 400));
+        CheckBalancePanel.addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
-                TransferPanelComponentShown(evt);
-            }
-        });
-        TransferPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        TransferPanel.setVisible(false);
-
-        TransferPanelTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        TransferPanelTitle.setForeground(new java.awt.Color(255, 255, 255));
-        TransferPanelTitle.setText("Transfer");
-        TransferPanel.add(TransferPanelTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 6, -1, 50));
-
-        TransferPanelSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        TransferPanel.add(TransferPanelSeparator, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 6, 13, 45));
-
-        TransferPanelLogo1.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        TransferPanelLogo1.setForeground(new java.awt.Color(255, 255, 255));
-        TransferPanelLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
-        TransferPanelLogo1.setText("UnprivateBank");
-        TransferPanel.add(TransferPanelLogo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, 315, -1));
-
-        TransferPanelSenderCard1.setBackground(new java.awt.Color(204, 204, 204));
-        TransferPanelSenderCard1.setMaximumSize(new java.awt.Dimension(300, 300));
-
-        transferPanelSenderName.setFont(new java.awt.Font("Marcellus SC", 0, 14)); // NOI18N
-        transferPanelSenderName.setText("Sender\n");
-
-        transferPanelVisa1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconVisa.png"))); // NOI18N
-
-        transferPanelSenderCardNumber.setFont(new java.awt.Font("Marcellus SC", 0, 18)); // NOI18N
-        transferPanelSenderCardNumber.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        transferPanelSenderCardNumber.setBorder(null);
-        transferPanelSenderCardNumber.setDisabledTextColor(new java.awt.Color(255, 255, 255));
-        transferPanelSenderCardNumber.setEditable(false);
-        transferPanelSenderCardNumber.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelSenderCardNumberActionPerformed(evt);
+                CheckBalancePanelComponentShown(evt);
             }
         });
 
-        javax.swing.GroupLayout TransferPanelSenderCard1Layout = new javax.swing.GroupLayout(TransferPanelSenderCard1);
-        TransferPanelSenderCard1.setLayout(TransferPanelSenderCard1Layout);
-        TransferPanelSenderCard1Layout.setHorizontalGroup(
-            TransferPanelSenderCard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TransferPanelSenderCard1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(transferPanelSenderName)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(transferPanelVisa1)
-                .addContainerGap())
-            .addComponent(transferPanelSenderCardNumber, javax.swing.GroupLayout.Alignment.TRAILING)
-        );
-        TransferPanelSenderCard1Layout.setVerticalGroup(
-            TransferPanelSenderCard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TransferPanelSenderCard1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(TransferPanelSenderCard1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(transferPanelVisa1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(transferPanelSenderName, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addComponent(transferPanelSenderCardNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(55, Short.MAX_VALUE))
-        );
+        cbBankLabel.setBackground(new java.awt.Color(0, 0, 0));
+        cbBankLabel.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        cbBankLabel.setForeground(new java.awt.Color(255, 255, 255));
+        cbBankLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
+        cbBankLabel.setText("UnprivateBank");
 
-        TransferPanel.add(TransferPanelSenderCard1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 62, 315, 160));
+        cbSignInLabel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cbSignInLabel.setForeground(new java.awt.Color(255, 255, 255));
+        cbSignInLabel.setText("Your Balance");
+        cbSignInLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        TransferPanelSenderCard2.setBackground(new java.awt.Color(204, 204, 204));
-        TransferPanelSenderCard2.setMaximumSize(new java.awt.Dimension(300, 300));
+        cbBalanceLabel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cbBalanceLabel.setForeground(new java.awt.Color(255, 255, 255));
+        cbBalanceLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        transferPanelReceiverName.setFont(new java.awt.Font("Marcellus SC", 0, 14)); // NOI18N
-        transferPanelReceiverName.setText("Receiver");
+        cbBalanceLabel1.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cbBalanceLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        cbBalanceLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        transferPanelVisa2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconVisa.png"))); // NOI18N
-
-        transferPanelReceiverCardNumber.setBorder(null);
-        try {
-            transferPanelReceiverCardNumber.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####-####-####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        transferPanelReceiverCardNumber.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        transferPanelReceiverCardNumber.setToolTipText("");
-        transferPanelReceiverCardNumber.setFont(new java.awt.Font("Marcellus SC", 0, 18)); // NOI18N
-        transferPanelReceiverCardNumber.setMinimumSize(new java.awt.Dimension(64, 26));
-        transferPanelReceiverCardNumber.addMouseListener(new java.awt.event.MouseAdapter() {
+        cbMenuPanel.setBackground(new java.awt.Color(255, 255, 255));
+        cbMenuPanel.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        cbMenuPanel.setForeground(new java.awt.Color(255, 255, 255));
+        cbMenuPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconCard.png"))); // NOI18N
+        cbMenuPanel.setText("        Menu");
+        cbMenuPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        cbMenuPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cbMenuPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                transferPanelReceiverCardNumberMouseClicked(evt);
-            }
-        });
-        transferPanelReceiverCardNumber.addInputMethodListener(new java.awt.event.InputMethodListener() {
-            public void caretPositionChanged(java.awt.event.InputMethodEvent evt) {
-                transferPanelReceiverCardNumberCaretPositionChanged(evt);
-            }
-            public void inputMethodTextChanged(java.awt.event.InputMethodEvent evt) {
-                transferPanelReceiverCardNumberInputMethodTextChanged(evt);
-            }
-        });
-        transferPanelReceiverCardNumber.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelReceiverCardNumberActionPerformed(evt);
+                cbMenuPanelMouseClicked(evt);
             }
         });
 
-        transferPanelValueTitle.setFont(new java.awt.Font("Marcellus SC", 0, 14)); // NOI18N
-        transferPanelValueTitle.setText("Value to send:");
-
-        try {
-            transferPanelValueToSend.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("######")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        transferPanelValueToSend.setText("0");
-        transferPanelValueToSend.setFont(new java.awt.Font("Marcellus SC", 0, 18)); // NOI18N
-        transferPanelValueToSend.addMouseListener(new java.awt.event.MouseAdapter() {
+        cbExitPanel.setBackground(new java.awt.Color(255, 255, 255));
+        cbExitPanel.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        cbExitPanel.setForeground(new java.awt.Color(255, 255, 255));
+        cbExitPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
+        cbExitPanel.setText("          Exit");
+        cbExitPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        cbExitPanel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cbExitPanel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                transferPanelValueToSendMouseClicked(evt);
-            }
-        });
-        transferPanelValueToSend.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelValueToSendActionPerformed(evt);
+                cbExitPanelMouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout TransferPanelSenderCard2Layout = new javax.swing.GroupLayout(TransferPanelSenderCard2);
-        TransferPanelSenderCard2.setLayout(TransferPanelSenderCard2Layout);
-        TransferPanelSenderCard2Layout.setHorizontalGroup(
-            TransferPanelSenderCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(transferPanelReceiverCardNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(TransferPanelSenderCard2Layout.createSequentialGroup()
+        javax.swing.GroupLayout CheckBalancePanelLayout = new javax.swing.GroupLayout(CheckBalancePanel);
+        CheckBalancePanel.setLayout(CheckBalancePanelLayout);
+        CheckBalancePanelLayout.setHorizontalGroup(
+            CheckBalancePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CheckBalancePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(TransferPanelSenderCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(TransferPanelSenderCard2Layout.createSequentialGroup()
-                        .addComponent(transferPanelReceiverName)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(transferPanelVisa2))
-                    .addGroup(TransferPanelSenderCard2Layout.createSequentialGroup()
-                        .addComponent(transferPanelValueTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32)
-                        .addComponent(transferPanelValueToSend, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        TransferPanelSenderCard2Layout.setVerticalGroup(
-            TransferPanelSenderCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TransferPanelSenderCard2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(TransferPanelSenderCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(transferPanelVisa2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(transferPanelReceiverName, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addComponent(transferPanelReceiverCardNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(TransferPanelSenderCard2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(transferPanelValueTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(transferPanelValueToSend, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(8, Short.MAX_VALUE))
-        );
-
-        TransferPanel.add(TransferPanelSenderCard2, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 62, -1, -1));
-
-        transferPanelValueKeybord.setVisible(false);
-
-        transferPanelKeybordBtnDel.setBackground(new java.awt.Color(204, 0, 0));
-        transferPanelKeybordBtnDel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtnDel.setText("X");
-        transferPanelKeybordBtnDel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtnDelActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn7.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn7.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn7.setText("7");
-        transferPanelKeybordBtn7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn7ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn4.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn4.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn4.setText("4");
-        transferPanelKeybordBtn4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn4ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn1.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn1.setText("1");
-        transferPanelKeybordBtn1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn1ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn2.setText("2");
-        transferPanelKeybordBtn2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn2ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn3.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn3.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn3.setText("3");
-        transferPanelKeybordBtn3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn3ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn6.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn6.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn6.setText("6");
-        transferPanelKeybordBtn6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        transferPanelKeybordBtn6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn6ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn5.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn5.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn5.setText("5");
-        transferPanelKeybordBtn5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn5ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn8.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn8.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn8.setText("8");
-        transferPanelKeybordBtn8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn8ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn9.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn9.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn9.setText("9");
-        transferPanelKeybordBtn9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn9ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtn0.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelKeybordBtn0.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtn0.setText("0");
-        transferPanelKeybordBtn0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtn0ActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtnSub.setBackground(new java.awt.Color(51, 204, 0));
-        transferPanelKeybordBtnSub.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelKeybordBtnSub.setText("Next");
-        transferPanelKeybordBtnSub.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtnSubActionPerformed(evt);
-            }
-        });
-
-        transferPanelKeybordBtnHide.setText("jButton1");
-        transferPanelKeybordBtnHide.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelKeybordBtnHideActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout transferPanelValueKeybordLayout = new javax.swing.GroupLayout(transferPanelValueKeybord);
-        transferPanelValueKeybord.setLayout(transferPanelValueKeybordLayout);
-        transferPanelValueKeybordLayout.setHorizontalGroup(
-            transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(transferPanelValueKeybordLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(transferPanelValueKeybordLayout.createSequentialGroup()
-                        .addComponent(transferPanelKeybordBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(transferPanelKeybordBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(transferPanelKeybordBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(transferPanelKeybordBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(transferPanelValueKeybordLayout.createSequentialGroup()
-                        .addGroup(transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(transferPanelValueKeybordLayout.createSequentialGroup()
-                                .addComponent(transferPanelKeybordBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(transferPanelKeybordBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(transferPanelValueKeybordLayout.createSequentialGroup()
-                                .addComponent(transferPanelKeybordBtnDel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(transferPanelKeybordBtn0, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(transferPanelValueKeybordLayout.createSequentialGroup()
-                                .addComponent(transferPanelKeybordBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(transferPanelKeybordBtnSub, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(transferPanelValueKeybordLayout.createSequentialGroup()
-                                .addComponent(transferPanelKeybordBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(transferPanelKeybordBtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(transferPanelKeybordBtnHide, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cbBankLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(CheckBalancePanelLayout.createSequentialGroup()
+                .addGap(204, 204, 204)
+                .addGroup(CheckBalancePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(cbBalanceLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 292, Short.MAX_VALUE)
+                    .addComponent(cbBalanceLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(CheckBalancePanelLayout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(cbExitPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 168, Short.MAX_VALUE)
+                .addComponent(cbMenuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CheckBalancePanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(cbSignInLabel)
+                .addGap(291, 291, 291))
         );
-        transferPanelValueKeybordLayout.setVerticalGroup(
-            transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(transferPanelValueKeybordLayout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
-                .addGroup(transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, transferPanelValueKeybordLayout.createSequentialGroup()
-                        .addGroup(transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(transferPanelKeybordBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(transferPanelKeybordBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(transferPanelValueKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(transferPanelKeybordBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtn0, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtnDel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelKeybordBtnSub, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(transferPanelKeybordBtnHide, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
-
-        TransferPanel.add(transferPanelValueKeybord, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 227, -1, -1));
-
-        transferPanelCardKeybord.setVisible(false);
-
-        transferPanelCardKeybordBtnDel.setBackground(new java.awt.Color(204, 0, 0));
-        transferPanelCardKeybordBtnDel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtnDel.setText("X");
-        transferPanelCardKeybordBtnDel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtnDelActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn7.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn7.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn7.setText("7");
-        transferPanelCardKeybordBtn7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn7ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn4.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn4.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn4.setText("4");
-        transferPanelCardKeybordBtn4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn4ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn1.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn1.setText("1");
-        transferPanelCardKeybordBtn1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn1ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn2.setText("2");
-        transferPanelCardKeybordBtn2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn2ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn3.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn3.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn3.setText("3");
-        transferPanelCardKeybordBtn3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn3ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn6.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn6.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn6.setText("6");
-        transferPanelCardKeybordBtn6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        transferPanelCardKeybordBtn6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn6ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn5.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn5.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn5.setText("5");
-        transferPanelCardKeybordBtn5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn5ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn8.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn8.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn8.setText("8");
-        transferPanelCardKeybordBtn8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn8ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn0.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn0.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn0.setText("9");
-        transferPanelCardKeybordBtn0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn0ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtn9.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        transferPanelCardKeybordBtn9.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        transferPanelCardKeybordBtn9.setText("0");
-        transferPanelCardKeybordBtn9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtn9ActionPerformed(evt);
-            }
-        });
-
-        transferPanelCardKeybordBtnHide.setText("jButton1");
-        transferPanelCardKeybordBtnHide.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferPanelCardKeybordBtnHideActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout transferPanelCardKeybordLayout = new javax.swing.GroupLayout(transferPanelCardKeybord);
-        transferPanelCardKeybord.setLayout(transferPanelCardKeybordLayout);
-        transferPanelCardKeybordLayout.setHorizontalGroup(
-            transferPanelCardKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(transferPanelCardKeybordLayout.createSequentialGroup()
+        CheckBalancePanelLayout.setVerticalGroup(
+            CheckBalancePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CheckBalancePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(transferPanelCardKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(transferPanelCardKeybordLayout.createSequentialGroup()
-                        .addComponent(transferPanelCardKeybordBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(transferPanelCardKeybordBtn0, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(transferPanelCardKeybordBtnDel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(transferPanelCardKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(transferPanelCardKeybordLayout.createSequentialGroup()
-                            .addComponent(transferPanelCardKeybordBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(transferPanelCardKeybordBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(transferPanelCardKeybordBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(transferPanelCardKeybordBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(transferPanelCardKeybordLayout.createSequentialGroup()
-                            .addComponent(transferPanelCardKeybordBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(transferPanelCardKeybordBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(transferPanelCardKeybordBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(transferPanelCardKeybordBtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(transferPanelCardKeybordBtnHide, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        transferPanelCardKeybordLayout.setVerticalGroup(
-            transferPanelCardKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, transferPanelCardKeybordLayout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
-                .addGroup(transferPanelCardKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(transferPanelCardKeybordBtnHide, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(transferPanelCardKeybordLayout.createSequentialGroup()
-                        .addGroup(transferPanelCardKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(transferPanelCardKeybordBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelCardKeybordBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelCardKeybordBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelCardKeybordBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(transferPanelCardKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(transferPanelCardKeybordBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelCardKeybordBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelCardKeybordBtn7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelCardKeybordBtn8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(transferPanelCardKeybordLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(transferPanelCardKeybordBtn9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelCardKeybordBtnDel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(transferPanelCardKeybordBtn0, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap())
-        );
-
-        TransferPanel.add(transferPanelCardKeybord, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 227, -1, 150));
-
-        TransferPanelBtnMenu.setBackground(new java.awt.Color(255, 255, 255));
-        TransferPanelBtnMenu.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        TransferPanelBtnMenu.setForeground(new java.awt.Color(255, 255, 255));
-        TransferPanelBtnMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTopMenu.png"))); // NOI18N
-        TransferPanelBtnMenu.setText("Menu");
-        TransferPanelBtnMenu.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        TransferPanelBtnMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        TransferPanelBtnMenu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TransferPanelBtnMenuMouseClicked(evt);
-            }
-        });
-        TransferPanel.add(TransferPanelBtnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 326, -1, -1));
-
-        getContentPane().add(TransferPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
-
-        SuccessTransferPanel.setBackground(new java.awt.Color(0, 102, 0));
-        SuccessTransferPanel.setMaximumSize(new java.awt.Dimension(290, 290));
-        SuccessTransferPanel.setVisible(false);
-
-        SuccessTransferLogo.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        SuccessTransferLogo.setForeground(new java.awt.Color(255, 255, 255));
-        SuccessTransferLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTransferMoney.png"))); // NOI18N
-        SuccessTransferLogo.setText("Success transaction");
-
-        SuccessTransferBtnExit.setBackground(new java.awt.Color(255, 255, 255));
-        SuccessTransferBtnExit.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        SuccessTransferBtnExit.setForeground(new java.awt.Color(255, 255, 255));
-        SuccessTransferBtnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
-        SuccessTransferBtnExit.setText(" Exit");
-        SuccessTransferBtnExit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        SuccessTransferBtnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        SuccessTransferBtnExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SuccessTransferBtnExitMouseClicked(evt);
-            }
-        });
-
-        SuccessTransferBtnTryAgain.setBackground(new java.awt.Color(255, 255, 255));
-        SuccessTransferBtnTryAgain.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        SuccessTransferBtnTryAgain.setForeground(new java.awt.Color(255, 255, 255));
-        SuccessTransferBtnTryAgain.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTryAgain.png"))); // NOI18N
-        SuccessTransferBtnTryAgain.setText("Try again");
-        SuccessTransferBtnTryAgain.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        SuccessTransferBtnTryAgain.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        SuccessTransferBtnTryAgain.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SuccessTransferBtnTryAgainMouseClicked(evt);
-            }
-        });
-
-        SuccessTransferBtnMenu.setBackground(new java.awt.Color(255, 255, 255));
-        SuccessTransferBtnMenu.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        SuccessTransferBtnMenu.setForeground(new java.awt.Color(255, 255, 255));
-        SuccessTransferBtnMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTopMenu.png"))); // NOI18N
-        SuccessTransferBtnMenu.setText("Menu");
-        SuccessTransferBtnMenu.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        SuccessTransferBtnMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        SuccessTransferBtnMenu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SuccessTransferBtnMenuMouseClicked(evt);
-            }
-        });
-
-        SuccessTransferBtnContacts.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        SuccessTransferBtnContacts.setForeground(new java.awt.Color(255, 255, 255));
-        SuccessTransferBtnContacts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconHelp.png"))); // NOI18N
-        SuccessTransferBtnContacts.setText("Contacts");
-        SuccessTransferBtnContacts.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        SuccessTransferBtnContacts.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        SuccessTransferErrorMessage.setBackground(new java.awt.Color(255, 255, 0));
-        SuccessTransferErrorMessage.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        SuccessTransferErrorMessage.setForeground(new java.awt.Color(255, 51, 102));
-        SuccessTransferErrorMessage.setText("               Error: Check your balance or try later!");
-        SuccessTransferErrorMessage.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 0, 0), 3, true));
-        SuccessTransferErrorMessage.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        SuccessTransferErrorMessage.setVisible(false);
-
-        javax.swing.GroupLayout SuccessTransferPanelLayout = new javax.swing.GroupLayout(SuccessTransferPanel);
-        SuccessTransferPanel.setLayout(SuccessTransferPanelLayout);
-        SuccessTransferPanelLayout.setHorizontalGroup(
-            SuccessTransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuccessTransferPanelLayout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addComponent(SuccessTransferLogo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(SuccessTransferPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(SuccessTransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SuccessTransferBtnTryAgain, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SuccessTransferBtnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(SuccessTransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SuccessTransferBtnMenu, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SuccessTransferBtnContacts, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(16, 16, 16))
-            .addGroup(SuccessTransferPanelLayout.createSequentialGroup()
-                .addComponent(SuccessTransferErrorMessage, javax.swing.GroupLayout.DEFAULT_SIZE, 694, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        SuccessTransferPanelLayout.setVerticalGroup(
-            SuccessTransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuccessTransferPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(SuccessTransferLogo)
-                .addGap(27, 27, 27)
-                .addComponent(SuccessTransferErrorMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addGroup(SuccessTransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SuccessTransferBtnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SuccessTransferBtnMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(cbBankLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(cbSignInLabel)
+                .addGap(26, 26, 26)
+                .addComponent(cbBalanceLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(SuccessTransferPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SuccessTransferBtnTryAgain)
-                    .addComponent(SuccessTransferBtnContacts))
-                .addGap(87, 87, 87))
+                .addComponent(cbBalanceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                .addGroup(CheckBalancePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbExitPanel)
+                    .addComponent(cbMenuPanel))
+                .addGap(52, 52, 52))
         );
 
-        getContentPane().add(SuccessTransferPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
+        getContentPane().add(CheckBalancePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
+        CheckBalancePanel.setVisible(false);
+
+        CardPanel.setBackground(new java.awt.Color(51, 102, 0));
+
+        cBankLabel.setBackground(new java.awt.Color(0, 0, 0));
+        cBankLabel.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        cBankLabel.setForeground(new java.awt.Color(255, 255, 255));
+        cBankLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
+        cBankLabel.setText("UnprivateBank");
+
+        InsertLabel.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        InsertLabel.setForeground(new java.awt.Color(255, 255, 255));
+        InsertLabel.setText("Insert the card");
+
+        SignInLabel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        SignInLabel.setForeground(new java.awt.Color(255, 255, 255));
+        SignInLabel.setText("Sign In");
+        SignInLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        CardField.setBackground(new java.awt.Color(0, 161, 33));
+        CardField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        CardField.setForeground(new java.awt.Color(255, 255, 255));
+        try {
+            CardField.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####-####-####-####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        CardField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CardField.setToolTipText("");
+        CardField.setFont(new java.awt.Font("Marcellus SC", 1, 14)); // NOI18N
+        CardField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CardFieldActionPerformed(evt);
+            }
+        });
+
+        cButton1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton1.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton1.setText("1");
+        cButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton1ActionPerformed(evt);
+            }
+        });
+
+        cButton2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton2.setText("2");
+        cButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton2ActionPerformed(evt);
+            }
+        });
+
+        cButton3.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton3.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton3.setText("3");
+        cButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton3ActionPerformed(evt);
+            }
+        });
+
+        cButton4.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton4.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton4.setText("4");
+        cButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton4ActionPerformed(evt);
+            }
+        });
+
+        cButton5.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton5.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton5.setText("5");
+        cButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton5ActionPerformed(evt);
+            }
+        });
+
+        cButton6.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton6.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton6.setText("6");
+        cButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton6ActionPerformed(evt);
+            }
+        });
+
+        cButton7.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton7.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton7.setText("7");
+        cButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton7ActionPerformed(evt);
+            }
+        });
+
+        cButton8.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton8.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton8.setText("8");
+        cButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton8ActionPerformed(evt);
+            }
+        });
+
+        cButton9.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton9.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton9.setText("9");
+        cButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton9ActionPerformed(evt);
+            }
+        });
+
+        cButtonDel.setBackground(new java.awt.Color(204, 0, 0));
+        cButtonDel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButtonDel.setText("X");
+        cButtonDel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButtonDelActionPerformed(evt);
+            }
+        });
+
+        cButton0.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
+        cButton0.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButton0.setText("0");
+        cButton0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButton0ActionPerformed(evt);
+            }
+        });
+
+        cButtonNext.setBackground(new java.awt.Color(51, 204, 0));
+        cButtonNext.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
+        cButtonNext.setText("Next");
+        cButtonNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButtonNextActionPerformed(evt);
+            }
+        });
+
+        CardLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconInsertCard.png"))); // NOI18N
+
+        javax.swing.GroupLayout CardPanelLayout = new javax.swing.GroupLayout(CardPanel);
+        CardPanel.setLayout(CardPanelLayout);
+        CardPanelLayout.setHorizontalGroup(
+            CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CardPanelLayout.createSequentialGroup()
+                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CardPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(cBankLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(CardPanelLayout.createSequentialGroup()
+                        .addGap(197, 197, 197)
+                        .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(CardPanelLayout.createSequentialGroup()
+                                .addGap(113, 113, 113)
+                                .addComponent(SignInLabel))
+                            .addGroup(CardPanelLayout.createSequentialGroup()
+                                .addComponent(CardLabel)
+                                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(CardPanelLayout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(CardPanelLayout.createSequentialGroup()
+                                                .addComponent(cButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(CardPanelLayout.createSequentialGroup()
+                                                .addComponent(cButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(CardPanelLayout.createSequentialGroup()
+                                                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(cButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(cButtonDel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(CardPanelLayout.createSequentialGroup()
+                                                        .addComponent(cButton0, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(cButtonNext, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addGroup(CardPanelLayout.createSequentialGroup()
+                                                        .addComponent(cButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(cButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addComponent(CardField, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(CardPanelLayout.createSequentialGroup()
+                                        .addGap(35, 35, 35)
+                                        .addComponent(InsertLabel)))))))
+                .addContainerGap(251, Short.MAX_VALUE))
+        );
+        CardPanelLayout.setVerticalGroup(
+            CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(CardPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(cBankLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(SignInLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(CardPanelLayout.createSequentialGroup()
+                        .addComponent(InsertLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(CardField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cButton0, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButtonDel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cButtonNext, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(CardPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        CardPanel.setVisible(false);
 
         PinPanel.setBackground(new java.awt.Color(51, 102, 0));
+        PinPanel.setPreferredSize(new java.awt.Dimension(700, 390));
         PinPanel.setVisible(false);
         PinPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1016,386 +670,13 @@ public class GUI_terminal extends javax.swing.JFrame {
 
         getContentPane().add(PinPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
-        PanelUserMenu.setBackground(new java.awt.Color(0, 102, 0));
-        PanelUserMenu.setVisible(false);
-
-        PanelMenuLogo.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        PanelMenuLogo.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
-        PanelMenuLogo.setText("UnprivateBank");
-
-        PanelMenuSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        PanelMenuSeparator.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
-
-        PanelMenuTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        PanelMenuTitle.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTitle.setText("Main menu");
-
-        PanelMenuTopUp.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuTopUp.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuTopUp.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTopUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPhone.png"))); // NOI18N
-        PanelMenuTopUp.setText("   Top up account");
-        PanelMenuTopUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuTopUp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        PanelMenuReplenish.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuReplenish.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuReplenish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconCard.png"))); // NOI18N
-        PanelMenuReplenish.setText("Replenish the card");
-        PanelMenuReplenish.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        PanelMenuReplenish.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuReplenish.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuReplenishMouseClicked(evt);
-            }
-        });
-
-        PanelMenuContacts.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuContacts.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuContacts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconHelp.png"))); // NOI18N
-        PanelMenuContacts.setText("Contact with us");
-        PanelMenuContacts.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuContacts.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        PanelMenuBalance.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuBalance.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuBalance.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuBalance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconBalance.png"))); // NOI18N
-        PanelMenuBalance.setText("   Check balance");
-        PanelMenuBalance.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuBalance.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuBalanceMouseClicked(evt);
-            }
-        });
-
-        PanelMenuTransfer.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuTransfer.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuTransfer.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuTransfer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTransfer.png"))); // NOI18N
-        PanelMenuTransfer.setText("   Make transfer");
-        PanelMenuTransfer.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuTransfer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuTransfer.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuTransferMouseClicked(evt);
-            }
-        });
-
-        PanelMenuExit.setBackground(new java.awt.Color(255, 255, 255));
-        PanelMenuExit.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        PanelMenuExit.setForeground(new java.awt.Color(255, 255, 255));
-        PanelMenuExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
-        PanelMenuExit.setText("          Exit");
-        PanelMenuExit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
-        PanelMenuExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        PanelMenuExit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                PanelMenuExitMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout PanelUserMenuLayout = new javax.swing.GroupLayout(PanelUserMenu);
-        PanelUserMenu.setLayout(PanelUserMenuLayout);
-        PanelUserMenuLayout.setHorizontalGroup(
-            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
-                                .addComponent(PanelMenuContacts, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(PanelMenuExit, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelUserMenuLayout.createSequentialGroup()
-                                .addComponent(PanelMenuReplenish, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(240, 240, 240)
-                                .addComponent(PanelMenuTransfer, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(14, Short.MAX_VALUE))
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addComponent(PanelMenuTopUp, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(PanelMenuBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(14, 14, 14))
-                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                        .addComponent(PanelMenuLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(37, 37, 37)
-                        .addComponent(PanelMenuSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(PanelMenuTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38))))
-        );
-        PanelUserMenuLayout.setVerticalGroup(
-            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelUserMenuLayout.createSequentialGroup()
-                .addGap(11, 11, 11)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(PanelMenuTitle)
-                    .addComponent(PanelMenuSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PanelMenuLogo))
-                .addGap(29, 29, 29)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuTopUp)
-                    .addComponent(PanelMenuBalance))
-                .addGap(7, 7, 7)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuReplenish)
-                    .addComponent(PanelMenuTransfer))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PanelMenuContacts)
-                    .addComponent(PanelMenuExit))
-                .addContainerGap(119, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(PanelUserMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
-
-        CardPanel.setBackground(new java.awt.Color(0, 100, 39));
-
-        cBankLabel.setBackground(new java.awt.Color(0, 0, 0));
-        cBankLabel.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
-        cBankLabel.setForeground(new java.awt.Color(255, 255, 255));
-        cBankLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
-        cBankLabel.setText("UnprivateBank");
-
-        InsertLabel.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
-        InsertLabel.setForeground(new java.awt.Color(255, 255, 255));
-        InsertLabel.setText("Insert the card");
-
-        SignInLabel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        SignInLabel.setForeground(new java.awt.Color(255, 255, 255));
-        SignInLabel.setText("Sign In");
-        SignInLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-
-        CardField.setBackground(new java.awt.Color(0, 161, 33));
-        CardField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
-        CardField.setForeground(new java.awt.Color(255, 255, 255));
-        try {
-            CardField.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("####-####-####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        CardField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        CardField.setToolTipText("");
-        CardField.setFont(new java.awt.Font("Marcellus SC", 1, 14)); // NOI18N
-        CardField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CardFieldActionPerformed(evt);
-            }
-        });
-
-        cButton1.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton1.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton1.setText("1");
-        cButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton1ActionPerformed(evt);
-            }
-        });
-
-        cButton2.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton2.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton2.setText("2");
-        cButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton2ActionPerformed(evt);
-            }
-        });
-
-        cButton3.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton3.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton3.setText("3");
-        cButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton3ActionPerformed(evt);
-            }
-        });
-
-        cButton4.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton4.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton4.setText("4");
-        cButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton4ActionPerformed(evt);
-            }
-        });
-
-        cButton5.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton5.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton5.setText("5");
-        cButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton5ActionPerformed(evt);
-            }
-        });
-
-        cButton6.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton6.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton6.setText("6");
-        cButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        cButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton6ActionPerformed(evt);
-            }
-        });
-
-        cButton7.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton7.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton7.setText("7");
-        cButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton7ActionPerformed(evt);
-            }
-        });
-
-        cButton8.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton8.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton8.setText("8");
-        cButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton8ActionPerformed(evt);
-            }
-        });
-
-        cButton9.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton9.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton9.setText("9");
-        cButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton9ActionPerformed(evt);
-            }
-        });
-
-        cButtonDel.setBackground(new java.awt.Color(204, 0, 0));
-        cButtonDel.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButtonDel.setText("X");
-        cButtonDel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButtonDelActionPerformed(evt);
-            }
-        });
-
-        cButton0.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.borderColor"));
-        cButton0.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButton0.setText("0");
-        cButton0.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButton0ActionPerformed(evt);
-            }
-        });
-
-        cButtonNext.setBackground(new java.awt.Color(51, 204, 0));
-        cButtonNext.setFont(new java.awt.Font("Marcellus SC", 1, 24)); // NOI18N
-        cButtonNext.setText("Next");
-        cButtonNext.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cButtonNextActionPerformed(evt);
-            }
-        });
-
-        CardLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconInsertCard.png"))); // NOI18N
-
-        javax.swing.GroupLayout CardPanelLayout = new javax.swing.GroupLayout(CardPanel);
-        CardPanel.setLayout(CardPanelLayout);
-        CardPanelLayout.setHorizontalGroup(
-            CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CardPanelLayout.createSequentialGroup()
-                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CardPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(cBankLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(CardPanelLayout.createSequentialGroup()
-                        .addGap(317, 317, 317)
-                        .addComponent(SignInLabel))
-                    .addGroup(CardPanelLayout.createSequentialGroup()
-                        .addGap(204, 204, 204)
-                        .addComponent(CardLabel)
-                        .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(CardPanelLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(CardPanelLayout.createSequentialGroup()
-                                        .addComponent(cButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(CardPanelLayout.createSequentialGroup()
-                                        .addComponent(cButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(cButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(CardPanelLayout.createSequentialGroup()
-                                        .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(cButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(cButtonDel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(CardPanelLayout.createSequentialGroup()
-                                                .addComponent(cButton0, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(cButtonNext, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(CardPanelLayout.createSequentialGroup()
-                                                .addComponent(cButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(cButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addComponent(CardField, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(CardPanelLayout.createSequentialGroup()
-                                .addGap(35, 35, 35)
-                                .addComponent(InsertLabel)))))
-                .addContainerGap(244, Short.MAX_VALUE))
-        );
-        CardPanelLayout.setVerticalGroup(
-            CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(CardPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(cBankLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(SignInLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(CardPanelLayout.createSequentialGroup()
-                        .addComponent(InsertLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(CardField, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(CardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(CardPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cButton0, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cButtonDel, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cButtonNext, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(CardPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, -1));
-        CardPanel.setVisible(false);
-
-        StartPanel.setBackground(new java.awt.Color(0, 100, 39));
+        StartPanel.setBackground(new java.awt.Color(51, 102, 0));
 
         sBankLabel.setBackground(new java.awt.Color(0, 0, 0));
         sBankLabel.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
         sBankLabel.setForeground(new java.awt.Color(255, 255, 255));
         sBankLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
-        sBankLabel.setText("₴UnprivateBank");
+        sBankLabel.setText("UnprivateBank");
 
         sLabel1.setBackground(new java.awt.Color(255, 255, 255));
         sLabel1.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
@@ -1596,7 +877,7 @@ public class GUI_terminal extends javax.swing.JFrame {
                     .addComponent(sLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(sLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(sLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addComponent(sSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(StartPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(StartPanelLayout.createSequentialGroup()
@@ -1698,6 +979,137 @@ public class GUI_terminal extends javax.swing.JFrame {
 
         getContentPane().add(StartPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
 
+        PanelUserMenu.setBackground(new java.awt.Color(0, 102, 0));
+        PanelUserMenu.setVisible(false);
+
+        PanelMenuLogo.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        PanelMenuLogo.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPrivate.png"))); // NOI18N
+        PanelMenuLogo.setText("UnprivateBank");
+
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jSeparator2.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+
+        PanelMenuTitle.setFont(new java.awt.Font("Marcellus SC", 1, 36)); // NOI18N
+        PanelMenuTitle.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTitle.setText("Main menu");
+
+        PanelMenuTopUp.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuTopUp.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuTopUp.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTopUp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconPhone.png"))); // NOI18N
+        PanelMenuTopUp.setText("   Top up account");
+        PanelMenuTopUp.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuTopUp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        PanelMenuReplenish.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuReplenish.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuReplenish.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconCard.png"))); // NOI18N
+        PanelMenuReplenish.setText("Replenish the card");
+        PanelMenuReplenish.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        PanelMenuReplenish.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuReplenish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuReplenishMouseClicked(evt);
+            }
+        });
+
+        PanelMenuContacts.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuContacts.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuContacts.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconHelp.png"))); // NOI18N
+        PanelMenuContacts.setText("Contact with us");
+        PanelMenuContacts.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuContacts.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        PanelMenuBalance.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuBalance.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuBalance.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuBalance.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconBalance.png"))); // NOI18N
+        PanelMenuBalance.setText("   Check balance");
+        PanelMenuBalance.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuBalance.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuBalance.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuBalanceMouseClicked(evt);
+            }
+        });
+
+        PanelMenuTransfer.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuTransfer.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuTransfer.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuTransfer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconTransfer.png"))); // NOI18N
+        PanelMenuTransfer.setText("   Make transfer");
+        PanelMenuTransfer.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuTransfer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        PanelMenuExit.setBackground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit.setFont(new java.awt.Font("Sitka Heading", 1, 18)); // NOI18N
+        PanelMenuExit.setForeground(new java.awt.Color(255, 255, 255));
+        PanelMenuExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/iconExit.png"))); // NOI18N
+        PanelMenuExit.setText("          Exit");
+        PanelMenuExit.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 3, true));
+        PanelMenuExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PanelMenuExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PanelMenuExitMouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout PanelUserMenuLayout = new javax.swing.GroupLayout(PanelUserMenu);
+        PanelUserMenu.setLayout(PanelUserMenuLayout);
+        PanelUserMenuLayout.setHorizontalGroup(
+            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(PanelMenuContacts, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(PanelMenuReplenish, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(439, Short.MAX_VALUE))
+                            .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                                .addComponent(PanelMenuTopUp, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(14, 439, Short.MAX_VALUE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelUserMenuLayout.createSequentialGroup()
+                        .addComponent(PanelMenuLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37)
+                        .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(PanelMenuBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PanelMenuTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PanelMenuTransfer, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PanelMenuExit, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(35, 35, 35))))
+        );
+        PanelUserMenuLayout.setVerticalGroup(
+            PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelUserMenuLayout.createSequentialGroup()
+                .addGap(11, 11, 11)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(PanelMenuTitle)
+                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PanelMenuLogo))
+                .addGap(55, 55, 55)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuTopUp)
+                    .addComponent(PanelMenuBalance))
+                .addGap(7, 7, 7)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuReplenish)
+                    .addComponent(PanelMenuTransfer))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(PanelUserMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PanelMenuContacts)
+                    .addComponent(PanelMenuExit))
+                .addContainerGap(93, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(PanelUserMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 390));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1761,7 +1173,6 @@ public class GUI_terminal extends javax.swing.JFrame {
         if (stringPassword.length() == 4) {
             int inputPassword = Integer.parseInt(new String(pPasswordField.getPassword()));
             if (inputPassword == currentUser.getPin()) {
-                pPasswordField.setText("");
                 PinPanel.setVisible(false);
                 PanelUserMenu.setVisible(true);
             } else {
@@ -1783,6 +1194,26 @@ public class GUI_terminal extends javax.swing.JFrame {
 
     private void sButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButton1ActionPerformed
         TB.AddDigitToFormattedTextField(sPhoneField, 1);
+//        String phoneInputRes = jFormattedTextField2.getValue().toString();
+//        
+//        if(phoneInputRes.length() == 0) {
+//            jFormattedTextField2.setValue("(" + 1);
+//        } else if(phoneInputRes.length() == 4) {
+//            jFormattedTextField2.setValue(phoneInputRes + ")1");
+//        } else if(phoneInputRes.length() == 7) {
+//            jFormattedTextField2.setValue(phoneInputRes + "-1");
+//        } else if(phoneInputRes.length() == 11) {
+//            jFormattedTextField2.setValue(phoneInputRes + "-1");
+//        } else if(phoneInputRes.length() >= 16) {
+//            return;
+//        }
+//        else {
+//            jFormattedTextField2.setValue(phoneInputRes + "1");
+//            System.out.println("Len: " + phoneInputRes.length());
+//        }
+//        
+//        
+//        System.out.println("RES: " + jFormattedTextField2.getValue().toString());
     }//GEN-LAST:event_sButton1ActionPerformed
 
     private void sButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButton3ActionPerformed
@@ -1884,12 +1315,14 @@ public class GUI_terminal extends javax.swing.JFrame {
 
     private void wpButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wpButton2ActionPerformed
         // TODO add your handling code here:
-        WrongPinFrame.setVisible(false);
+         WrongPinFrame.setVisible(false);
         pPasswordField.setText("");
     }//GEN-LAST:event_wpButton2ActionPerformed
 
     private void PanelMenuBalanceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelMenuBalanceMouseClicked
         // TODO add your handling code here:
+        PanelUserMenu.setVisible(false);
+        CheckBalancePanel.setVisible(true);
         System.out.println("Hello, " + currentUser.getUser_name() + " | Your balance: " + currentUser.getBalance());
     }//GEN-LAST:event_PanelMenuBalanceMouseClicked
 
@@ -1911,67 +1344,28 @@ public class GUI_terminal extends javax.swing.JFrame {
         // TODO add your handling code here:
         StartPanel.setVisible(false);
         CardPanel.setVisible(true);
-
+        
     }//GEN-LAST:event_sLabel2MouseClicked
 
-    private void CardFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CardFieldActionPerformed
+    private void CheckBalancePanelComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_CheckBalancePanelComponentShown
         // TODO add your handling code here:
-    }//GEN-LAST:event_CardFieldActionPerformed
+        cbBalanceLabel1.setText("Account owner:  " + currentUser.getUser_name());
+        cbBalanceLabel.setText("Available balance:  $" + currentUser.getBalance());
+    }//GEN-LAST:event_CheckBalancePanelComponentShown
 
-    private void cButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton1ActionPerformed
+    private void cbMenuPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbMenuPanelMouseClicked
         // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 1);
-    }//GEN-LAST:event_cButton1ActionPerformed
+        CheckBalancePanel.setVisible(false);
+        PanelUserMenu.setVisible(true);
+    }//GEN-LAST:event_cbMenuPanelMouseClicked
 
-    private void cButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton2ActionPerformed
+    private void cbExitPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cbExitPanelMouseClicked
         // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 2);
-    }//GEN-LAST:event_cButton2ActionPerformed
-
-    private void cButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton3ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 3);
-    }//GEN-LAST:event_cButton3ActionPerformed
-
-    private void cButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton4ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 4);
-    }//GEN-LAST:event_cButton4ActionPerformed
-
-    private void cButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton5ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 5);
-    }//GEN-LAST:event_cButton5ActionPerformed
-
-    private void cButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton6ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 6);
-    }//GEN-LAST:event_cButton6ActionPerformed
-
-    private void cButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton7ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 7);
-    }//GEN-LAST:event_cButton7ActionPerformed
-
-    private void cButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton8ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 8);
-    }//GEN-LAST:event_cButton8ActionPerformed
-
-    private void cButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton9ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 9);
-    }//GEN-LAST:event_cButton9ActionPerformed
-
-    private void cButtonDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonDelActionPerformed
-        // TODO add your handling code here:
-        TB.DeleteFromFormattedTextField(CardField);
-    }//GEN-LAST:event_cButtonDelActionPerformed
-
-    private void cButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton0ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToCardField(CardField, 0);
-    }//GEN-LAST:event_cButton0ActionPerformed
+        pPasswordField.setText("");
+        CheckBalancePanel.setVisible(false);
+        StartPanel.setVisible(true);
+        currentUser = null;
+    }//GEN-LAST:event_cbExitPanelMouseClicked
 
     private void cButtonNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonNextActionPerformed
         // TODO add your handling code here:
@@ -1997,328 +1391,64 @@ public class GUI_terminal extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_cButtonNextActionPerformed
 
-    private void transferPanelSenderCardNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelSenderCardNumberActionPerformed
+    private void cButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton0ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_transferPanelSenderCardNumberActionPerformed
+        TB.AddDigitToCardField(CardField, 0);
+    }//GEN-LAST:event_cButton0ActionPerformed
 
-    private void PanelMenuTransferMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PanelMenuTransferMouseClicked
+    private void cButtonDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonDelActionPerformed
         // TODO add your handling code here:
-        PanelUserMenu.setVisible(false);
-        TransferPanel.setVisible(true);
-    }//GEN-LAST:event_PanelMenuTransferMouseClicked
+        TB.DeleteFromFormattedTextField(CardField);
+    }//GEN-LAST:event_cButtonDelActionPerformed
 
-    private void TransferPanelComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_TransferPanelComponentShown
+    private void cButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton9ActionPerformed
         // TODO add your handling code here:
-        transferPanelSenderName.setText(transferPanelSenderName.getText() + ": " + currentUser.getUser_name());
-        transferPanelSenderCardNumber.setText(currentUser.getCard_Number());
+        TB.AddDigitToCardField(CardField, 9);
+    }//GEN-LAST:event_cButton9ActionPerformed
 
-    }//GEN-LAST:event_TransferPanelComponentShown
-
-    private void transferPanelReceiverCardNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelReceiverCardNumberActionPerformed
+    private void cButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_transferPanelReceiverCardNumberActionPerformed
+        TB.AddDigitToCardField(CardField, 8);
+    }//GEN-LAST:event_cButton8ActionPerformed
 
-    private void transferPanelKeybordBtnDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtnDelActionPerformed
+    private void cButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton7ActionPerformed
         // TODO add your handling code here:
-        TB.DeleteFromValueField(transferPanelValueToSend);
-    }//GEN-LAST:event_transferPanelKeybordBtnDelActionPerformed
+        TB.AddDigitToCardField(CardField, 7);
+    }//GEN-LAST:event_cButton7ActionPerformed
 
-    private void transferPanelKeybordBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn7ActionPerformed
+    private void cButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton6ActionPerformed
         // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 7);
-    }//GEN-LAST:event_transferPanelKeybordBtn7ActionPerformed
+        TB.AddDigitToCardField(CardField, 6);
+    }//GEN-LAST:event_cButton6ActionPerformed
 
-    private void transferPanelKeybordBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn4ActionPerformed
+    private void cButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton5ActionPerformed
         // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 4);
-    }//GEN-LAST:event_transferPanelKeybordBtn4ActionPerformed
+        TB.AddDigitToCardField(CardField, 5);
+    }//GEN-LAST:event_cButton5ActionPerformed
 
-    private void transferPanelKeybordBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn1ActionPerformed
+    private void cButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton4ActionPerformed
         // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 1);
+        TB.AddDigitToCardField(CardField, 4);
+    }//GEN-LAST:event_cButton4ActionPerformed
 
-    }//GEN-LAST:event_transferPanelKeybordBtn1ActionPerformed
-
-    private void transferPanelKeybordBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn2ActionPerformed
+    private void cButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton3ActionPerformed
         // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 2);
-    }//GEN-LAST:event_transferPanelKeybordBtn2ActionPerformed
+        TB.AddDigitToCardField(CardField, 3);
+    }//GEN-LAST:event_cButton3ActionPerformed
 
-    private void transferPanelKeybordBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn3ActionPerformed
+    private void cButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton2ActionPerformed
         // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 3);
-    }//GEN-LAST:event_transferPanelKeybordBtn3ActionPerformed
+        TB.AddDigitToCardField(CardField, 2);
+    }//GEN-LAST:event_cButton2ActionPerformed
 
-    private void transferPanelKeybordBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn6ActionPerformed
+    private void cButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButton1ActionPerformed
         // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 6);
-    }//GEN-LAST:event_transferPanelKeybordBtn6ActionPerformed
+        TB.AddDigitToCardField(CardField, 1);
+    }//GEN-LAST:event_cButton1ActionPerformed
 
-    private void transferPanelKeybordBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn5ActionPerformed
+    private void CardFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CardFieldActionPerformed
         // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 5);
-    }//GEN-LAST:event_transferPanelKeybordBtn5ActionPerformed
-
-    private void transferPanelKeybordBtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn8ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 8);
-    }//GEN-LAST:event_transferPanelKeybordBtn8ActionPerformed
-
-    private void transferPanelKeybordBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn9ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 9);
-    }//GEN-LAST:event_transferPanelKeybordBtn9ActionPerformed
-
-    private void transferPanelKeybordBtn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtn0ActionPerformed
-        // TODO add your handling code here:
-        TB.AddDigitToValueField(transferPanelValueToSend, 0);
-    }//GEN-LAST:event_transferPanelKeybordBtn0ActionPerformed
-
-    private void transferPanelKeybordBtnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtnSubActionPerformed
-        // TODO add your handling code here:
-        String cardInputResult;
-        //        java.lang.NullPointerException
-        try {
-            cardInputResult = transferPanelReceiverCardNumber.getValue().toString();
-        } catch (NullPointerException e) {
-            transferPanelReceiverCardNumber.setValue("");
-            cardInputResult = transferPanelReceiverCardNumber.getValue().toString();
-        }
-
-        if (cardInputResult.length() == 19 && !cardInputResult.equals(currentUser.getCard_Number())) {
-            System.out.println("CARD: " + cardInputResult);
-            User receiverUser = null;
-            List<User> users = DataBaseObject.SelectAll();
-
-            for (int i = 0; i < users.size(); i++) {
-                if (users.get(i).getCard_Number().equals(cardInputResult)) {
-                    receiverUser = users.get(i);
-                }
-            }
-
-            if (receiverUser != null) {
-                System.out.println("REC ID: " + receiverUser.getId() + " | REC NAME: " + receiverUser.getUser_name());
-                // Перевірка валідності суми транзакції
-                int valueToSendInputResult = 0;
-
-                System.out.println("VALUE TO SEND: " + transferPanelValueToSend.getValue().toString());
-                try {
-                    System.out.println("VALUE TO SEND: " + transferPanelValueToSend.getValue().toString());
-                    valueToSendInputResult = Integer.parseInt(transferPanelValueToSend.getValue().toString());
-                } catch (NullPointerException e) {
-                    transferPanelValueToSend.setValue(0);
-                    System.out.println(transferPanelValueToSend.getText());
-                }
-                if (valueToSendInputResult != 0) {
-                    if (DataBaseObject.Transfer(currentUser.getId(), receiverUser.getId(), valueToSendInputResult)) {
-                        TransferPanel.setVisible(false);
-                        SuccessTransferPanel.setVisible(true);
-                        SuccessTransferErrorMessage.setVisible(false);
-                        SuccessTransferLogo.setText("Success transfer");
-                        currentUser = DataBaseObject.GetUserById(currentUser.getId());
-                    } else {
-                        TransferPanel.setVisible(false);
-                        SuccessTransferPanel.setVisible(true);
-                        SuccessTransferErrorMessage.setVisible(true);
-                        SuccessTransferLogo.setText("Failed transfer");
-                    }
-                    transferPanelValueKeybord.setVisible(false);
-                    transferPanelCardKeybord.setVisible(false);
-                    transferPanelValueToSend.setValue("0");
-                    transferPanelReceiverCardNumber.setValue("");
-                }
-
-            } else {
-                if (!transferPanelReceiverName.getText().contains("No such card")) {
-                    transferPanelReceiverName.setText(transferPanelReceiverName.getText() + ": No such card");
-                }
-            }
-
-        } else {
-            if (!transferPanelReceiverName.getText().contains("No such card")) {
-                transferPanelReceiverName.setText(transferPanelReceiverName.getText() + ": No such card");
-            }
-
-        }
-    }//GEN-LAST:event_transferPanelKeybordBtnSubActionPerformed
-
-    private void transferPanelValueToSendMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_transferPanelValueToSendMouseClicked
-        // TODO add your handling code here:
-        transferPanelValueKeybord.setVisible(true);
-        transferPanelCardKeybord.setVisible(false);
-    }//GEN-LAST:event_transferPanelValueToSendMouseClicked
-
-    private void transferPanelKeybordBtnHideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelKeybordBtnHideActionPerformed
-        // TODO add your handling code here:
-        transferPanelValueKeybord.setVisible(false);
-    }//GEN-LAST:event_transferPanelKeybordBtnHideActionPerformed
-
-    private void transferPanelCardKeybordBtnDelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtnDelActionPerformed
-        // TODO add your handling code here:
-        if (transferPanelReceiverCardNumber.getValue().toString().length() == 19) {
-            transferPanelReceiverName.setText("Receiver");
-        }
-        TB.DeleteFromFormattedTextField(transferPanelReceiverCardNumber);
-    }//GEN-LAST:event_transferPanelCardKeybordBtnDelActionPerformed
-
-    private void transferPanelCardKeybordBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn7ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 7);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 7, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn7ActionPerformed
-
-    private void transferPanelCardKeybordBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn4ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 4);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 4, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn4ActionPerformed
-
-    private void transferPanelCardKeybordBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn1ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 1);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 1, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn1ActionPerformed
-
-    private void transferPanelCardKeybordBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn2ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 2);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 2, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn2ActionPerformed
-
-    private void transferPanelCardKeybordBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn3ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 3);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 3, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn3ActionPerformed
-
-    private void transferPanelCardKeybordBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn6ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 6);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 6, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn6ActionPerformed
-
-    private void transferPanelCardKeybordBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn5ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 5);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 5, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn5ActionPerformed
-
-    private void transferPanelCardKeybordBtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn8ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 8);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 8, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn8ActionPerformed
-
-    private void transferPanelCardKeybordBtn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn0ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 9);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 9, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn0ActionPerformed
-
-    private void transferPanelCardKeybordBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtn9ActionPerformed
-        // TODO add your handling code here:
-//        TB.AddDigitToCardField(CardField1, 0);
-        TB.addDigitToTransferCardField(transferPanelReceiverCardNumber, 0, transferPanelReceiverName, currentUser, transferPanelCardKeybord);
-    }//GEN-LAST:event_transferPanelCardKeybordBtn9ActionPerformed
-
-    private void transferPanelReceiverCardNumberMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_transferPanelReceiverCardNumberMouseClicked
-        // TODO add your handling code here:
-        transferPanelValueKeybord.setVisible(false);
-        transferPanelCardKeybord.setVisible(true);
-    }//GEN-LAST:event_transferPanelReceiverCardNumberMouseClicked
-
-    private void transferPanelReceiverCardNumberCaretPositionChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_transferPanelReceiverCardNumberCaretPositionChanged
-        // TODO add your handling code here:
-//        System.out.println("Caret moved");
-//        String cardInputResult;
-//        try {
-//            cardInputResult = CardField1.getValue().toString();
-//            if(cardInputResult.length() == 19) {
-//                User cardUser = null;
-//                List<User> users = DataBaseObject.SelectAll();
-//                for(int i = 0; i < users.size(); i ++) {
-//                    if(users.get(i).getCard_Number().equals(cardInputResult)) {
-//                        cardUser = users.get(i);
-//                    }
-//                }
-//                if(cardUser != null) jLabel2.setText("Receiver: " + cardUser.getUser_name());
-//            }
-//            
-//        } catch (NullPointerException e) {
-//            CardField1.setValue("");
-////            cardInputResult = CardField1.getValue().toString();
-//        }
-
-    }//GEN-LAST:event_transferPanelReceiverCardNumberCaretPositionChanged
-
-    private void transferPanelReceiverCardNumberInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_transferPanelReceiverCardNumberInputMethodTextChanged
-        // TODO add your handling code here:
-//         System.out.println("Caret moved");
-//        String cardInputResult;
-//        try {
-//            cardInputResult = CardField1.getValue().toString();
-//            if(cardInputResult.length() == 19) {
-//                User cardUser = null;
-//                List<User> users = DataBaseObject.SelectAll();
-//                for(int i = 0; i < users.size(); i ++) {
-//                    if(users.get(i).getCard_Number().equals(cardInputResult)) {
-//                        cardUser = users.get(i);
-//                    }
-//                }
-//                if(cardUser != null) jLabel2.setText("Receiver: " + cardUser.getUser_name());
-//            }
-//            
-//        } catch (NullPointerException e) {
-//            CardField1.setValue("");
-////            cardInputResult = CardField1.getValue().toString();
-//        }
-    }//GEN-LAST:event_transferPanelReceiverCardNumberInputMethodTextChanged
-
-    private void transferPanelValueToSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelValueToSendActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_transferPanelValueToSendActionPerformed
-
-    private void transferPanelCardKeybordBtnHideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_transferPanelCardKeybordBtnHideActionPerformed
-        // TODO add your handling code here:
-        transferPanelCardKeybord.setVisible(false);
-    }//GEN-LAST:event_transferPanelCardKeybordBtnHideActionPerformed
-
-    private void SuccessTransferBtnExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SuccessTransferBtnExitMouseClicked
-        // TODO add your handling code here:
-        currentUser = null;
-        SuccessTransferPanel.setVisible(false);
-//        TransferPanel.setVisible(false);
-        StartPanel.setVisible(true);
-    }//GEN-LAST:event_SuccessTransferBtnExitMouseClicked
-
-    private void SuccessTransferBtnTryAgainMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SuccessTransferBtnTryAgainMouseClicked
-        // TODO add your handling code here:
-        transferPanelReceiverCardNumber.setValue("");
-        transferPanelValueToSend.setValue("0");
-        transferPanelSenderName.setText("Sender");
-        transferPanelReceiverName.setText("Receiver");
-        SuccessTransferPanel.setVisible(false);
-        TransferPanel.setVisible(true);
-    }//GEN-LAST:event_SuccessTransferBtnTryAgainMouseClicked
-
-    private void SuccessTransferBtnMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SuccessTransferBtnMenuMouseClicked
-        // TODO add your handling code here:
-
-        SuccessTransferPanel.setVisible(false);
-        PanelUserMenu.setVisible(true);
-    }//GEN-LAST:event_SuccessTransferBtnMenuMouseClicked
-
-    private void TransferPanelBtnMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TransferPanelBtnMenuMouseClicked
-        // TODO add your handling code here:
-        transferPanelReceiverCardNumber.setValue("");
-        transferPanelValueToSend.setValue("0");
-        transferPanelSenderName.setText("Sender");
-        transferPanelReceiverName.setText("Receiver");
-        transferPanelValueKeybord.setVisible(false);
-        transferPanelCardKeybord.setVisible(false);
-        TransferPanel.setVisible(false);
-        PanelUserMenu.setVisible(true);
-    }//GEN-LAST:event_TransferPanelBtnMenuMouseClicked
+    }//GEN-LAST:event_CardFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2358,13 +1488,13 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField CardField;
     private javax.swing.JLabel CardLabel;
     private javax.swing.JPanel CardPanel;
+    private javax.swing.JPanel CheckBalancePanel;
     private javax.swing.JLabel InsertLabel;
     private javax.swing.JLabel PanelMenuBalance;
     private javax.swing.JLabel PanelMenuContacts;
     private javax.swing.JLabel PanelMenuExit;
     private javax.swing.JLabel PanelMenuLogo;
     private javax.swing.JLabel PanelMenuReplenish;
-    private javax.swing.JSeparator PanelMenuSeparator;
     private javax.swing.JLabel PanelMenuTitle;
     private javax.swing.JLabel PanelMenuTopUp;
     private javax.swing.JLabel PanelMenuTransfer;
@@ -2372,20 +1502,6 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JPanel PinPanel;
     private javax.swing.JLabel SignInLabel;
     private javax.swing.JPanel StartPanel;
-    private javax.swing.JLabel SuccessTransferBtnContacts;
-    private javax.swing.JLabel SuccessTransferBtnExit;
-    private javax.swing.JLabel SuccessTransferBtnMenu;
-    private javax.swing.JLabel SuccessTransferBtnTryAgain;
-    private javax.swing.JLabel SuccessTransferErrorMessage;
-    private javax.swing.JLabel SuccessTransferLogo;
-    private javax.swing.JPanel SuccessTransferPanel;
-    private javax.swing.JPanel TransferPanel;
-    private javax.swing.JLabel TransferPanelBtnMenu;
-    private javax.swing.JLabel TransferPanelLogo1;
-    private javax.swing.JPanel TransferPanelSenderCard1;
-    private javax.swing.JPanel TransferPanelSenderCard2;
-    private javax.swing.JSeparator TransferPanelSeparator;
-    private javax.swing.JLabel TransferPanelTitle;
     private javax.swing.JInternalFrame WrongPinFrame;
     private javax.swing.JLabel cBankLabel;
     private javax.swing.JButton cButton0;
@@ -2400,6 +1516,13 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JButton cButton9;
     private javax.swing.JButton cButtonDel;
     private javax.swing.JButton cButtonNext;
+    private javax.swing.JLabel cbBalanceLabel;
+    private javax.swing.JLabel cbBalanceLabel1;
+    private javax.swing.JLabel cbBankLabel;
+    private javax.swing.JLabel cbExitPanel;
+    private javax.swing.JLabel cbMenuPanel;
+    private javax.swing.JLabel cbSignInLabel;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JLabel pBankLabel;
     private javax.swing.JButton pButton0;
     private javax.swing.JButton pButton1;
@@ -2438,41 +1561,6 @@ public class GUI_terminal extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField sPhoneField;
     private javax.swing.JLabel sPhoneLabel;
     private javax.swing.JSeparator sSeparator;
-    private javax.swing.JPanel transferPanelCardKeybord;
-    private javax.swing.JButton transferPanelCardKeybordBtn0;
-    private javax.swing.JButton transferPanelCardKeybordBtn1;
-    private javax.swing.JButton transferPanelCardKeybordBtn2;
-    private javax.swing.JButton transferPanelCardKeybordBtn3;
-    private javax.swing.JButton transferPanelCardKeybordBtn4;
-    private javax.swing.JButton transferPanelCardKeybordBtn5;
-    private javax.swing.JButton transferPanelCardKeybordBtn6;
-    private javax.swing.JButton transferPanelCardKeybordBtn7;
-    private javax.swing.JButton transferPanelCardKeybordBtn8;
-    private javax.swing.JButton transferPanelCardKeybordBtn9;
-    private javax.swing.JButton transferPanelCardKeybordBtnDel;
-    private javax.swing.JButton transferPanelCardKeybordBtnHide;
-    private javax.swing.JButton transferPanelKeybordBtn0;
-    private javax.swing.JButton transferPanelKeybordBtn1;
-    private javax.swing.JButton transferPanelKeybordBtn2;
-    private javax.swing.JButton transferPanelKeybordBtn3;
-    private javax.swing.JButton transferPanelKeybordBtn4;
-    private javax.swing.JButton transferPanelKeybordBtn5;
-    private javax.swing.JButton transferPanelKeybordBtn6;
-    private javax.swing.JButton transferPanelKeybordBtn7;
-    private javax.swing.JButton transferPanelKeybordBtn8;
-    private javax.swing.JButton transferPanelKeybordBtn9;
-    private javax.swing.JButton transferPanelKeybordBtnDel;
-    private javax.swing.JButton transferPanelKeybordBtnHide;
-    private javax.swing.JButton transferPanelKeybordBtnSub;
-    private javax.swing.JFormattedTextField transferPanelReceiverCardNumber;
-    private javax.swing.JLabel transferPanelReceiverName;
-    private javax.swing.JTextField transferPanelSenderCardNumber;
-    private javax.swing.JLabel transferPanelSenderName;
-    private javax.swing.JPanel transferPanelValueKeybord;
-    private javax.swing.JLabel transferPanelValueTitle;
-    private javax.swing.JFormattedTextField transferPanelValueToSend;
-    private javax.swing.JLabel transferPanelVisa1;
-    private javax.swing.JLabel transferPanelVisa2;
     private javax.swing.JButton wpButton1;
     private javax.swing.JButton wpButton2;
     private javax.swing.JLabel wpLabel1;
