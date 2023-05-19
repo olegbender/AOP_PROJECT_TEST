@@ -80,7 +80,8 @@ public class ConnectDB {
             System.out.println("TRANSFER FAILED: " + e.getMessage());
         }
     }
-
+    
+    
     public Connection connect() {
         String url = "jdbc:sqlite:bankDB.db";
         Connection conn = null;

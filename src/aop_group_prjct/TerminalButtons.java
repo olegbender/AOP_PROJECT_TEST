@@ -15,7 +15,7 @@ public class TerminalButtons {
             phoneInputRes = phoneInputRes.substring(0, phoneInputRes.length() - 1);
             textField.setValue(phoneInputRes);
         }
-        if (phoneInputRes.length() > 0) {
+        if (phoneInputRes.length() > 1) {
             phoneInputRes = phoneInputRes.substring(0, phoneInputRes.length() - 1);
             textField.setValue(phoneInputRes);
         }
@@ -39,7 +39,7 @@ public class TerminalButtons {
 //            System.out.println("Len: " + phoneInputRes.length());
         }
 
-       System.out.println("RES: " + textField.getValue().toString());
+//        System.out.println("RES: " + textField.getValue().toString());
     }
 
     public void AddDigitToPasswordField(JPasswordField textField, int digit) {
@@ -59,7 +59,7 @@ public class TerminalButtons {
             System.out.println("RES: " + new String(textField.getPassword()));
         }
     }
-    
+
     public void AddDigitToCardField(JFormattedTextField textField, int digit) {
         String cardInputRes;
         try {
@@ -81,4 +81,5 @@ public class TerminalButtons {
             textField.setValue(cardInputRes + digit);
         }
     }
+
 }

@@ -79,7 +79,6 @@ public class User {
     }
 }
 
-
     void User_name(String u) {
         user_name = u;
     }
